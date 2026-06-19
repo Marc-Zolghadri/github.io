@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marc Zolghadri - Industrial Partnerships</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #f4f7f6;
-            color: #2c3e50;
-        }
+    <title>Marc Zolghadri - Profil industriel</title>
 
 ```
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        max-width: 1050px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f4f7f6;
+        color: #2c3e50;
+    }
+
     .card {
         background: white;
         padding: 35px;
@@ -24,19 +25,97 @@
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    h1, h2 {
+    .header {
+        text-align: center;
+    }
+
+    .portrait {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h1 {
         color: #2c3e50;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 8px;
     }
 
     .subtitle {
         color: #333333;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        font-size: 1.05em;
+    }
+
+    .tagline {
+        max-width: 820px;
+        margin: 0 auto 25px auto;
+        font-size: 1.1em;
     }
 
     .section {
-        margin-top: 28px;
+        margin-top: 32px;
         border-top: 1px solid #eee;
-        padding-top: 20px;
+        padding-top: 24px;
+    }
+
+    .highlight {
+        background: #eef6fb;
+        padding: 22px;
+        border-left: 5px solid #3498db;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .box {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .box h3 {
+        margin-top: 0;
+    }
+
+    .metric {
+        font-size: 2em;
+        font-weight: bold;
+        color: #3498db;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    li {
+        margin-bottom: 6px;
     }
 
     .btn {
@@ -62,81 +141,736 @@
         background: #626e70;
     }
 
-    ul {
-        padding-left: 22px;
+    .process {
+        counter-reset: step;
+        margin-top: 20px;
+    }
+
+    .process-step {
+        background: #f8f9fa;
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 14px;
+        position: relative;
+    }
+
+    .process-step::before {
+        counter-increment: step;
+        content: counter(step);
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .references {
+        margin-top: 40px;
+        border-top: 1px solid #eee;
+        padding-top: 28px;
+    }
+
+    .references details {
+        background: #f8f9fa;
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 16px;
+    }
+
+    .references summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 1.05em;
+    }
+
+    .references ol {
+        padding-left: 24px;
+        margin-top: 16px;
+    }
+
+    .references li {
+        margin-bottom: 12px;
+    }
+
+    .small {
+        font-size: 0.92em;
+        color: #555;
+    }
+
+    .navigation {
+        margin-top: 30px;
+        text-align: center;
+        border-top: 1px solid #eee;
+        padding-top: 22px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 25px;
+        color: #555;
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 850px) {
+        .grid-3,
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        body {
+            margin: 20px auto;
+        }
+
+        .card {
+            padding: 25px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+        }
     }
 </style>
 ```
 
 </head>
+
 <body>
     <div class="card">
-        <h1>Marc Zolghadri — Industrial Partnerships</h1>
 
 ```
-    <p class="subtitle">
-        Obsolescence Management · Critical Systems · MCO · Redesign · Industrial Resilience
-    </p>
+    <div class="header">
+        <h1>Marc Zolghadri</h1>
 
-    <p>
-        J’aide les organisations industrielles à anticiper, diagnostiquer et traiter l’obsolescence
-        des systèmes critiques, en combinant ingénierie système, modèles de risque, re-conception
-        et stratégies de pérennité.
-    </p>
+        <img src="MarcZolghadri2022.jpeg"
+             alt="Marc Zolghadri"
+             class="portrait">
 
-    <div class="section">
-        <h2>Problèmes industriels traités</h2>
-        <ul>
-            <li>Obsolescence de composants, logiciels, technologies, fournisseurs ou moyens de test</li>
-            <li>Propagation de l’obsolescence dans les architectures produit et système</li>
-            <li>Maintien en condition opérationnelle de systèmes critiques à longue durée de vie</li>
-            <li>Décisions de stock, réparation, cannibalisation, redesign et remplacement</li>
-            <li>Construction de stratégies de pérennité industrielle</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Modalités de collaboration</h2>
-        <ul>
-            <li>Diagnostic ou audit de maturité en gestion d’obsolescence</li>
-            <li>Formation de cadres, ingénieurs et responsables techniques</li>
-            <li>Construction de feuille de route obsolescence et résilience</li>
-            <li>Montage de thèse CIFRE, LabCom ou projet collaboratif</li>
-            <li>Développement de méthodes, outils et démonstrateurs</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Secteurs concernés</h2>
-        <ul>
-            <li>Aéronautique, ferroviaire, défense, énergie, automobile</li>
-            <li>Systèmes industriels complexes et infrastructures critiques</li>
-            <li>Organisations confrontées à des cycles de vie longs et à des dépendances technologiques fortes</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Contact industriel</h2>
-        <p>
-            Pour discuter d’un besoin industriel, d’un sujet CIFRE, d’une formation, d’un audit
-            ou d’un projet de partenariat, vous pouvez me contacter directement.
+        <p class="subtitle">
+            Professeur des Universités · ISAE-Supméca · Laboratoire Quartz
         </p>
 
-        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Contact%20industriel%20-%20Obsolescence%20/%20CIFRE%20/%20Formation" class="btn">
-            Me contacter pour un besoin industriel
+        <p class="tagline">
+            Expertise industrielle en gestion d’obsolescence, pérennité des systèmes critiques,
+            MCO, re-conception, audit de maturité, formation et construction de partenariats
+            recherche-industrie.
+        </p>
+
+        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Contact%20industriel%20-%20Obsolescence%20/%20CIFRE%20/%20Formation%20/%20Partenariat" class="btn">
+            Contact industriel
         </a>
 
         <a href="RA-MarcZolghadri.pdf" target="_blank" class="btn btn-secondary">
-            Télécharger le rapport d’activités complet
+            Télécharger le rapport complet
         </a>
 
         <a href="orientation.html" class="btn btn-secondary">
             Retour au portail
         </a>
     </div>
+
+    <div class="section">
+        <h2>Positionnement industriel</h2>
+
+        <div class="highlight">
+            <p>
+                J’accompagne les organisations industrielles confrontées à des systèmes complexes,
+                critiques et à longue durée de vie, pour anticiper, diagnostiquer et traiter
+                les risques d’obsolescence.
+            </p>
+
+            <p>
+                L’objectif est de transformer l’obsolescence en sujet pilotable :
+                identifier les vulnérabilités, comprendre les propagations, construire des scénarios
+                de mitigation, choisir les stratégies adaptées et renforcer la résilience industrielle.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Problèmes industriels adressés</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Obsolescence des composants et technologies</h3>
+                <p>
+                    Analyse des composants, technologies, logiciels, fournisseurs,
+                    moyens de test ou connaissances critiques exposés à un risque d’obsolescence.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Propagation dans les systèmes complexes</h3>
+                <p>
+                    Identification des effets en cascade : un composant obsolète peut affecter
+                    une fonction, un sous-système, une architecture, une stratégie de maintenance
+                    ou un niveau de disponibilité.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>MCO et disponibilité opérationnelle</h3>
+                <p>
+                    Prise en compte conjointe de l’obsolescence, des pénuries, de la maintenance,
+                    de la réparabilité, des stocks et de la disponibilité des systèmes critiques.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Re-conception et résilience</h3>
+                <p>
+                    Construction de stratégies de re-conception, rétro-ingénierie,
+                    déspecialisation, substitution, redesign ou adaptation pour prolonger
+                    la durée de vie opérationnelle.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Stocks, réparation et cannibalisation</h3>
+                <p>
+                    Appui méthodologique au raisonnement sur les stocks stratégiques,
+                    la réparation, la cannibalisation, les substitutions et les arbitrages économiques.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Transformation numérique et nouvelles fragilités</h3>
+                <p>
+                    Analyse des vulnérabilités induites par la numérisation, les logiciels,
+                    les données, les dépendances fournisseurs et les chaînes de valeur numériques.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Quelques repères industriels</h2>
+
+        <div class="grid-3">
+            <div class="box">
+                <div class="metric">2025-2029</div>
+                <p>
+                    LabCom i-OREO avec ABMI sur la résilience, la rétro-ingénierie augmentée
+                    et la gestion proactive de l’obsolescence.
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="metric">2022-2026</div>
+                <p>
+                    ANR EOS avec des partenaires industriels autour de l’aide à la décision
+                    pour la gestion active de l’obsolescence.
+                </p>
+            </div>
+
+            <div class="box">
+                <div class="metric">CIFRE</div>
+                <p>
+                    Plusieurs thèses ou actions de recherche partenariale avec des entreprises
+                    sur l’obsolescence, le MCO, la prévision et les systèmes critiques.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Modalités de collaboration</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Diagnostic / audit</h3>
+                <ul>
+                    <li>Audit de maturité en gestion d’obsolescence</li>
+                    <li>Cartographie des risques et vulnérabilités</li>
+                    <li>Analyse des dépendances critiques</li>
+                    <li>Identification des priorités d’action</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Feuille de route industrielle</h3>
+                <ul>
+                    <li>Structuration d’une stratégie obsolescence</li>
+                    <li>Scénarios de mitigation</li>
+                    <li>Organisation des processus de surveillance</li>
+                    <li>Construction d’indicateurs de pilotage</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Recherche partenariale</h3>
+                <ul>
+                    <li>Montage de thèse CIFRE</li>
+                    <li>LabCom ou projet collaboratif</li>
+                    <li>Preuve de concept ou démonstrateur</li>
+                    <li>Valorisation scientifique et industrielle</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Formation et transfert</h3>
+                <ul>
+                    <li>Formation courte ou approfondie</li>
+                    <li>Sensibilisation de comités de direction</li>
+                    <li>Ateliers appliqués sur cas industriels</li>
+                    <li>Transfert de méthodes vers les équipes métiers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Approche proposée</h2>
+
+        <div class="process">
+            <div class="process-step">
+                <strong>Cadrer le besoin industriel</strong>
+                <p>
+                    Identifier le système concerné, son contexte de cycle de vie, ses contraintes
+                    opérationnelles, ses dépendances fournisseurs, ses exigences de disponibilité
+                    et les enjeux économiques ou stratégiques.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>Cartographier les vulnérabilités</strong>
+                <p>
+                    Repérer les composants, technologies, logiciels, compétences, documents,
+                    moyens de test ou fournisseurs susceptibles de devenir des points de fragilité.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>Analyser les propagations</strong>
+                <p>
+                    Étudier comment une obsolescence locale peut se propager vers les fonctions,
+                    les sous-systèmes, les interfaces, la maintenance, la sécurité ou la disponibilité.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>Construire les scénarios de traitement</strong>
+                <p>
+                    Comparer plusieurs stratégies : stock, réparation, substitution, cannibalisation,
+                    redesign, rétro-ingénierie, re-conception, déspecialisation ou changement
+                    d’architecture.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>Décider et piloter</strong>
+                <p>
+                    Mettre en place des indicateurs, une feuille de route, des règles de décision,
+                    une gouvernance et des outils pour passer d’une gestion réactive à une gestion
+                    proactive de l’obsolescence.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Livrables possibles</h2>
+
+        <div class="grid-3">
+            <div class="box">
+                <h3>Diagnostic</h3>
+                <ul>
+                    <li>Rapport d’audit</li>
+                    <li>Cartographie des risques</li>
+                    <li>Liste des vulnérabilités critiques</li>
+                    <li>Priorisation des actions</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Stratégie</h3>
+                <ul>
+                    <li>Feuille de route obsolescence</li>
+                    <li>Scénarios de mitigation</li>
+                    <li>Indicateurs de pilotage</li>
+                    <li>Processus de surveillance</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Démonstrateur</h3>
+                <ul>
+                    <li>Preuve de concept</li>
+                    <li>Modèle de risque</li>
+                    <li>Prototype logiciel</li>
+                    <li>Support à la décision</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Exemples de thématiques applicatives</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Systèmes critiques à longue durée de vie</h3>
+                <ul>
+                    <li>Aéronautique</li>
+                    <li>Ferroviaire</li>
+                    <li>Défense</li>
+                    <li>Énergie</li>
+                    <li>Infrastructures critiques</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Familles de risques</h3>
+                <ul>
+                    <li>Obsolescence composant</li>
+                    <li>Obsolescence logiciel</li>
+                    <li>Obsolescence fournisseur</li>
+                    <li>Perte de compétences</li>
+                    <li>Documentation et données insuffisantes</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Décisions industrielles</h3>
+                <ul>
+                    <li>Faut-il stocker ?</li>
+                    <li>Faut-il réparer ?</li>
+                    <li>Faut-il cannibaliser ?</li>
+                    <li>Faut-il remplacer ?</li>
+                    <li>Faut-il re-concevoir ?</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Organisation et gouvernance</h3>
+                <ul>
+                    <li>Processus de veille</li>
+                    <li>Rôles et responsabilités</li>
+                    <li>Tableaux de bord</li>
+                    <li>Gestion des connaissances</li>
+                    <li>Capitalisation des retours d’expérience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Partenariats et actions industrielles</h2>
+
+        <div class="highlight">
+            <p>
+                Mon activité industrielle s’inscrit dans une logique de dialogue durable
+                entre recherche académique, organisations industrielles, réseaux professionnels,
+                fédérations, pôles de compétitivité et communautés internationales spécialisées
+                dans l’obsolescence.
+            </p>
+        </div>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Actions de recherche partenariale</h3>
+                <ul>
+                    <li>LabCom i-OREO avec ABMI</li>
+                    <li>ANR EOS avec partenaires industriels</li>
+                    <li>Thèses CIFRE sur l’obsolescence, le MCO et les systèmes critiques</li>
+                    <li>Travaux de postdoctorat liés à la résilience et à la rétro-ingénierie</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Animation de communauté</h3>
+                <ul>
+                    <li>International Institute of Obsolescence Management</li>
+                    <li>Institut Français puis Francophone de l’Obsolescence</li>
+                    <li>Conférences Obso-Days</li>
+                    <li>Groupes de travail industriels et académiques</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Transfert vers les pratiques</h3>
+                <ul>
+                    <li>Audit de maturité en gestion d’obsolescence</li>
+                    <li>Serious game ObsoRisk</li>
+                    <li>Mastère Spécialisé POP</li>
+                    <li>Formations professionnelles et sensibilisation industrielle</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Écosystème industriel</h3>
+                <ul>
+                    <li>Collaborations avec grands groupes et entreprises technologiques</li>
+                    <li>Interactions avec fédérations professionnelles</li>
+                    <li>Participation à des réseaux Industrie du Futur</li>
+                    <li>Contribution à la normalisation et aux bonnes pratiques</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pour quel type de demande me contacter ?</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Vous avez un problème opérationnel</h3>
+                <p>
+                    Un composant, un équipement, un logiciel, un fournisseur, une compétence
+                    ou un moyen de test menace la disponibilité d’un système critique.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Vous voulez structurer une démarche</h3>
+                <p>
+                    Votre organisation souhaite passer d’une gestion réactive de l’obsolescence
+                    à une stratégie anticipative, documentée et pilotée.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Vous cherchez un partenariat de recherche</h3>
+                <p>
+                    Vous envisagez une thèse CIFRE, un LabCom, un projet collaboratif,
+                    un démonstrateur ou une preuve de concept.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Vous voulez former vos équipes</h3>
+                <p>
+                    Vous souhaitez sensibiliser ou former des ingénieurs, responsables techniques,
+                    responsables MCO, maintenance, qualité, supply chain ou innovation.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contact industriel</h2>
+
+        <p>
+            Pour discuter d’un besoin industriel, d’un audit, d’un sujet CIFRE,
+            d’une formation, d’un LabCom ou d’un projet de partenariat, vous pouvez me contacter directement.
+        </p>
+
+        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Contact%20industriel%20-%20Obsolescence%20/%20CIFRE%20/%20Formation%20/%20Partenariat" class="btn">
+            Me contacter pour un besoin industriel
+        </a>
+
+        <a href="formation.html" class="btn">
+            Voir les formations professionnelles
+        </a>
+
+        <a href="RA-MarcZolghadri.pdf" target="_blank" class="btn btn-secondary">
+            Télécharger le rapport d’activités complet
+        </a>
+    </div>
+
+    <div class="references">
+        <h2>Références industrielles et actions associées</h2>
+
+        <p>
+            Cette section rassemble les éléments industriels structurants issus de mes activités :
+            projets partenariaux, actions CIFRE, réseaux, événements, groupes de travail et transfert
+            vers les pratiques professionnelles.
+        </p>
+
+        <details open>
+            <summary>Projets partenariaux structurants</summary>
+
+            <ol>
+                <li>
+                    <strong>ANR LabCom i-OREO — 2025-2029.</strong>
+                    Projet avec ABMI consacré à l’obsolescence et à la résilience optimisée
+                    des systèmes complexes, autour de la rétro-ingénierie augmentée,
+                    de la résilience des systèmes et de la gestion proactive de l’obsolescence
+                    par la conception et la re-conception.
+                </li>
+
+                <li>
+                    <strong>ANR EOS — 2022-2026.</strong>
+                    Projet d’aide à la décision pour la gestion active de l’obsolescence,
+                    avec des partenaires académiques et industriels, visant à développer
+                    des techniques et outils de gestion active de l’obsolescence.
+                </li>
+
+                <li>
+                    <strong>France Relance — OREO ABMI.</strong>
+                    Action de recherche postdoctorale consacrée à la détermination
+                    d’un indice de résilience en collaboration avec ABMI.
+                </li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Thèses CIFRE et recherches avec industriels</summary>
+
+            <ol>
+                <li>
+                    <strong>CIFRE SNCF Réseau.</strong>
+                    Travaux sur l’optimisation de la gestion de l’obsolescence
+                    en environnement de systèmes critiques, avec application à des infrastructures
+                    ferroviaires.
+                </li>
+
+                <li>
+                    <strong>CIFRE ABMI.</strong>
+                    Travaux sur les méthodes et outils pour la rétro-ingénierie augmentée
+                    basée sur la modélisation système face aux défis de l’obsolescence.
+                </li>
+
+                <li>
+                    <strong>CIFRE Orange.</strong>
+                    Travaux sur l’évaluation de l’état de santé et la résilience de réseaux
+                    de télécommunications.
+                </li>
+
+                <li>
+                    <strong>Nigerian Airspace Management Agency.</strong>
+                    Travaux doctoraux sur la disponibilité de matériels de haute criticité
+                    soumis à des obsolescences, dans le domaine du trafic aérien.
+                </li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Réseaux, communautés et normalisation</summary>
+
+            <ol>
+                <li>
+                    <strong>International Institute of Obsolescence Management.</strong>
+                    Présidence internationale et contribution à la structuration
+                    d’une communauté historiquement très industrielle autour de l’obsolescence.
+                </li>
+
+                <li>
+                    <strong>Institut Français puis Francophone de l’Obsolescence.</strong>
+                    Co-fondation et présidence d’un espace de dialogue entre recherche,
+                    industrie et acteurs institutionnels.
+                </li>
+
+                <li>
+                    <strong>Obso-Days.</strong>
+                    Co-création, co-présidence puis présidence d’un rendez-vous annuel
+                    de la communauté académique et industrielle sur l’obsolescence.
+                </li>
+
+                <li>
+                    <strong>IEC 62402.</strong>
+                    Participation aux travaux de normalisation internationale en gestion
+                    de l’obsolescence.
+                </li>
+
+                <li>
+                    <strong>Systematic.</strong>
+                    Participation comme membre académique au Comité de Pilotage de l’Enjeu
+                    Transformation Numérique Industrie &amp; Services.
+                </li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Transfert, formation et structuration de pratiques industrielles</summary>
+
+            <ol>
+                <li>
+                    <strong>Mastère Spécialisé POP — Pérennité, Obsolescence, Pénurie.</strong>
+                    Formation visant à structurer des compétences professionnelles de haut niveau
+                    sur la pérennité des systèmes, l’obsolescence et les pénuries.
+                </li>
+
+                <li>
+                    <strong>Audit de maturité en gestion d’obsolescence.</strong>
+                    Animation de travaux dédiés à la définition d’outils d’audit de maturité.
+                </li>
+
+                <li>
+                    <strong>ObsoRisk.</strong>
+                    Serious game destiné à sensibiliser étudiants et industriels aux mécanismes
+                    de risque liés à l’obsolescence.
+                </li>
+
+                <li>
+                    <strong>Formations professionnelles.</strong>
+                    Transfert de méthodes vers les cadres, ingénieurs, responsables techniques,
+                    responsables MCO, maintenance, qualité, supply chain et innovation.
+                </li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Publications et communications à forte portée industrielle</summary>
+
+            <ol>
+                <li>
+                    <strong>Obsolescence, rarefaction and their propagation.</strong>
+                    Contribution à la compréhension systémique de l’obsolescence,
+                    de la raréfaction et de leurs effets de propagation.
+                </li>
+
+                <li>
+                    <strong>Systematic Analysis of the Links Between Obsolescence–Shortage
+                    and Reliability–Maintainability–Availability.</strong>
+                    Analyse des liens entre obsolescence, pénurie, fiabilité,
+                    maintenabilité et disponibilité.
+                </li>
+
+                <li>
+                    <strong>Prediction of obsolescence degree as a function of time.</strong>
+                    Contribution à la prédiction temporelle du degré d’obsolescence.
+                </li>
+
+                <li>
+                    <strong>A methodology to determine the resilience of a system to obsolescence
+                    during the design phase.</strong>
+                    Méthode de conception de systèmes résilients face à l’obsolescence.
+                </li>
+
+                <li>
+                    <strong>Enhancing obsolescence forecasting with deep generative data augmentation.</strong>
+                    Prévision de l’obsolescence en contexte industriel à faibles données.
+                </li>
+
+                <li>
+                    <strong>Maintien en condition opérationnelle et gestion de l’obsolescence.</strong>
+                    Article Techniques de l’Ingénieur reliant MCO, disponibilité et obsolescence.
+                </li>
+            </ol>
+        </details>
+    </div>
+
+    <div class="navigation">
+        <a href="orientation.html" class="btn btn-secondary">
+            Retour au portail
+        </a>
+
+        <a href="scientific.html" class="btn btn-secondary">
+            Voir le profil scientifique
+        </a>
+
+        <a href="formation.html" class="btn btn-secondary">
+            Voir les formations professionnelles
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>
+            ISAE-Supméca · Laboratoire Quartz · IIOM · IFO
+        </p>
+    </div>
+
 </div>
 ```
 
 </body>
 </html>
-
