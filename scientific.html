@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marc Zolghadri - Scientific Profile</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #f4f7f6;
-            color: #2c3e50;
-        }
+    <title>Marc Zolghadri - Profil scientifique</title>
 
 ```
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        max-width: 1050px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f4f7f6;
+        color: #2c3e50;
+    }
+
     .card {
         background: white;
         padding: 35px;
@@ -24,19 +25,116 @@
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    h1, h2 {
+    .header {
+        text-align: center;
+    }
+
+    .portrait {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h1 {
         color: #2c3e50;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 8px;
     }
 
     .subtitle {
         color: #333333;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        font-size: 1.05em;
+    }
+
+    .tagline {
+        max-width: 820px;
+        margin: 0 auto 25px auto;
+        font-size: 1.1em;
     }
 
     .section {
-        margin-top: 28px;
+        margin-top: 32px;
         border-top: 1px solid #eee;
-        padding-top: 20px;
+        padding-top: 24px;
+    }
+
+    .highlight {
+        background: #eef6fb;
+        padding: 22px;
+        border-left: 5px solid #3498db;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .box {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .box h3 {
+        margin-top: 0;
+    }
+
+    .metric {
+        font-size: 2em;
+        font-weight: bold;
+        color: #3498db;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    .publication {
+        margin-bottom: 16px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .publication:last-child {
+        border-bottom: none;
+    }
+
+    .publication-title {
+        font-weight: bold;
+    }
+
+    .small {
+        font-size: 0.92em;
+        color: #555;
     }
 
     .btn {
@@ -62,80 +160,678 @@
         background: #626e70;
     }
 
-    ul {
-        padding-left: 22px;
+    .bibliography {
+        margin-top: 40px;
+        border-top: 1px solid #eee;
+        padding-top: 28px;
+    }
+
+    .bibliography details {
+        background: #f8f9fa;
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 16px;
+    }
+
+    .bibliography summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 1.05em;
+    }
+
+    .bibliography ol {
+        padding-left: 24px;
+        margin-top: 16px;
+    }
+
+    .bibliography li {
+        margin-bottom: 12px;
+    }
+
+    .bibliography .note {
+        font-size: 0.92em;
+        color: #555;
+        margin-top: 8px;
+    }
+
+    .navigation {
+        margin-top: 30px;
+        text-align: center;
+        border-top: 1px solid #eee;
+        padding-top: 22px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 25px;
+        color: #555;
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 850px) {
+        .grid-3,
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        body {
+            margin: 20px auto;
+        }
+
+        .card {
+            padding: 25px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+        }
     }
 </style>
 ```
 
 </head>
+
 <body>
     <div class="card">
-        <h1>Marc Zolghadri — Scientific Profile</h1>
 
 ```
-    <p class="subtitle">
-        Professor at ISAE-Supméca · Laboratoire Quartz · Obsolescence Management · System Engineering · Industrial Resilience
-    </p>
+    <div class="header">
+        <h1>Marc Zolghadri</h1>
 
-    <p>
-        I develop scientific models, methods and tools for proactive obsolescence management,
-        system redesign and lifecycle resilience of complex industrial systems.
-    </p>
+        <img src="MarcZolghadri2022.jpeg"
+             alt="Marc Zolghadri"
+             class="portrait">
 
-    <div class="section">
-        <h2>Research focus</h2>
-        <ul>
-            <li>Proactive obsolescence management and long-lifespan systems</li>
-            <li>Propagation of risks, changes and decisions in complex system architectures</li>
-            <li>System engineering, redesign and resilience to obsolescence</li>
-            <li>Obsolescence forecasting, probabilistic modelling and explainable AI</li>
-            <li>Maintenance in operational condition, availability and critical systems</li>
-        </ul>
-    </div>
+        <p class="subtitle">
+            Professeur des Universités · ISAE-Supméca · Laboratoire Quartz
+        </p>
 
-    <div class="section">
-        <h2>Selected research activities</h2>
-        <ul>
-            <li>Coordinator of ANR EOS — Active Obsolescence Management Decision Support</li>
-            <li>Coordinator of ANR LabCom i-OREO — Obsolescence and Optimized Resilience</li>
-            <li>Scientific supervision of doctoral and postdoctoral research on obsolescence</li>
-            <li>Contributions to IEC 62402 and international obsolescence management networks</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Collaboration opportunities</h2>
-        <ul>
-            <li>Joint research projects: ANR, Horizon Europe, LabCom, international programs</li>
-            <li>PhD supervision, CIFRE theses and doctoral committees</li>
-            <li>Scientific publications, special issues and conference tracks</li>
-            <li>Academic expertise, evaluation, keynote lectures and workshops</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Contact scientifique</h2>
-        <p>
-            Pour une collaboration scientifique, un projet de recherche, une thèse, une conférence
-            ou une expertise académique, vous pouvez me contacter directement.
+        <p class="tagline">
+            Recherche en gestion proactive de l’obsolescence, ingénierie système,
+            propagation des risques, re-conception et résilience des systèmes industriels complexes
+            à longue durée de vie.
         </p>
 
         <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Contact%20scientifique%20-%20Collaboration%20recherche" class="btn">
-            Me contacter pour une collaboration scientifique
+            Contact scientifique
         </a>
 
         <a href="RA-MarcZolghadri.pdf" target="_blank" class="btn btn-secondary">
-            Télécharger le rapport d’activités complet
+            Télécharger le rapport complet
         </a>
 
         <a href="orientation.html" class="btn btn-secondary">
             Retour au portail
         </a>
     </div>
+
+    <div class="section">
+        <h2>Positionnement scientifique</h2>
+
+        <div class="highlight">
+            <p>
+                Mes travaux visent à comprendre, modéliser et maîtriser les mécanismes
+                de propagation dans les systèmes industriels complexes : propagation des changements,
+                des risques, des décisions, des pénuries et des phénomènes d’obsolescence.
+            </p>
+
+            <p>
+                L’obsolescence est abordée non comme un simple événement de fin de vie,
+                mais comme un processus dynamique, incertain et systémique, lié à l’architecture
+                des systèmes, à la disponibilité opérationnelle, aux choix de conception,
+                aux décisions de maintenance et aux stratégies de pérennité.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Quelques repères</h2>
+
+        <div class="grid-3">
+            <div class="box">
+                <div class="metric">20+</div>
+                <p>années de recherche sur les systèmes industriels complexes, la décision et l’obsolescence.</p>
+            </div>
+
+            <div class="box">
+                <div class="metric">18</div>
+                <p>thèses soutenues dirigées ou co-dirigées, avec plusieurs travaux dédiés à l’obsolescence.</p>
+            </div>
+
+            <div class="box">
+                <div class="metric">2</div>
+                <p>projets ANR majeurs coordonnés sur la gestion active et proactive de l’obsolescence : EOS et i-OREO.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Axes de recherche</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>1. Ingénierie de l’obsolescence</h3>
+                <p>
+                    Formalisation de l’obsolescence comme phénomène systémique,
+                    incertain et propagatif, dépassant une lecture limitée à la fin de vie
+                    des composants.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>2. Propagation des risques et des changements</h3>
+                <p>
+                    Modélisation des dépendances entre composants, fonctions,
+                    sous-systèmes, décisions et architectures afin d’anticiper les effets
+                    en cascade.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>3. Résilience et re-conception des systèmes</h3>
+                <p>
+                    Développement de méthodes pour concevoir ou re-concevoir des systèmes
+                    plus robustes face aux évolutions technologiques, aux pénuries et aux ruptures
+                    de disponibilité.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>4. Prévision et quantification de l’obsolescence</h3>
+                <p>
+                    Construction d’indicateurs temporels, de modèles probabilistes et de méthodes
+                    d’intelligence artificielle explicables pour anticiper les risques d’obsolescence.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>5. MCO, disponibilité et systèmes critiques</h3>
+                <p>
+                    Analyse des liens entre obsolescence, pénurie, fiabilité, maintenabilité
+                    et disponibilité opérationnelle dans les systèmes à longue durée de vie.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>6. Industrie 4.0 et incertitude</h3>
+                <p>
+                    Étude des nouvelles formes de fragilité induites par la numérisation,
+                    l’interconnexion, les logiciels, les données et les chaînes de valeur numériques.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projets de recherche structurants</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>ANR EOS — 2022-2026</h3>
+                <p>
+                    Projet de recherche consacré à l’aide à la décision pour la gestion active
+                    de l’obsolescence. Le projet associe ISAE-Supméca, LAAS-CNRS, Valeo
+                    et Merem Electronique.
+                </p>
+
+                <ul>
+                    <li>Gestion active de l’obsolescence</li>
+                    <li>Modélisation des risques et des stratégies de mitigation</li>
+                    <li>Outils d’aide à la décision</li>
+                    <li>Co-direction de thèses et coordination scientifique</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>ANR LabCom i-OREO — 2025-2029</h3>
+                <p>
+                    LabCom porté avec ABMI, consacré à l’obsolescence et à la résilience optimisée
+                    des systèmes complexes.
+                </p>
+
+                <ul>
+                    <li>Rétro-ingénierie augmentée</li>
+                    <li>Résilience des systèmes face à l’obsolescence</li>
+                    <li>Gestion proactive par la conception et la re-conception</li>
+                    <li>Développement de la plateforme RAMSES</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Publications scientifiques sélectionnées</h2>
+
+        <div class="publication">
+            <div class="publication-title">
+                Obsolescence, rarefaction and their propagation
+            </div>
+            <div class="small">
+                Zolghadri M., Addouche S.A., Baron C., Boissie K., Soltan A.,
+                Research in Engineering Design, 2021.
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                What is happening in product obsolescence management?
+                Three decades of review from 1993 to 2023
+            </div>
+            <div class="small">
+                Liu Y., Zolghadri M.,
+                Research in Engineering Design, 2026.
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                Systematic Analysis of the Links Between Obsolescence–Shortage
+                and Reliability–Maintainability–Availability
+            </div>
+            <div class="small">
+                Karaani S., Zolghadri M., Besbes M., Baron C. et al.,
+                IEEE Access, 2025.
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                Prediction of obsolescence degree as a function of time:
+                a mathematical formulation
+            </div>
+            <div class="small">
+                Trabelsi I., Zolghadri M., Zeddini B.,
+                Computers in Industry, 2021.
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                A methodology to determine the resilience of a system to obsolescence
+                during the design phase
+            </div>
+            <div class="small">
+                Soltan A., Addouche S., Zolghadri M.,
+                Research in Engineering Design, 2021.
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                Enhancing obsolescence forecasting with deep generative data augmentation:
+                a semi-supervised framework for low-data industrial applications
+            </div>
+            <div class="small">
+                Saad E., Besbes M., Zolghadri M. et al.,
+                Journal of Intelligent Manufacturing, 2025.
+            </div>
+        </div>
+
+        <a href="#bibliographie" class="btn">
+            Voir la bibliographie complète
+        </a>
+    </div>
+
+    <div class="section">
+        <h2>Encadrement doctoral et structuration scientifique</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Encadrement doctoral</h3>
+                <ul>
+                    <li>18 thèses soutenues</li>
+                    <li>4 thèses en cours</li>
+                    <li>4 postdoctorats dirigés</li>
+                    <li>Plusieurs thèses CIFRE sur l’obsolescence, le MCO, la prévision et les systèmes critiques</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Thématiques doctorales récentes</h3>
+                <ul>
+                    <li>Gestion active de l’obsolescence et de la pénurie</li>
+                    <li>Disponibilité opérationnelle en contexte d’obsolescence</li>
+                    <li>Rétro-ingénierie augmentée et résilience</li>
+                    <li>Prévision de l’obsolescence par IA et modèles génératifs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Rayonnement scientifique et international</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Communautés et réseaux</h3>
+                <ul>
+                    <li>Président international de l’International Institute of Obsolescence Management</li>
+                    <li>Co-fondateur et président de l’Institut Français puis Francophone de l’Obsolescence</li>
+                    <li>Co-fondateur et président des conférences Obso-Days</li>
+                    <li>Ancien directeur adjoint du GIS S.mart</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Expertise et normalisation</h3>
+                <ul>
+                    <li>Représentant français pour les travaux autour de la norme IEC 62402</li>
+                    <li>Expertises ANR et internationales</li>
+                    <li>Participation à des jurys de thèse et HDR</li>
+                    <li>Keynotes, webinaires invités et animation de groupes de travail</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Collaborations scientifiques recherchées</h2>
+
+        <div class="highlight">
+            <p>
+                Je suis ouvert à des collaborations scientifiques sur la gestion d’obsolescence,
+                l’ingénierie système, la résilience, la re-conception, la propagation des risques,
+                le MCO, les systèmes critiques et les méthodes hybrides combinant modèles,
+                données et expertise.
+            </p>
+
+            <ul>
+                <li>Projets ANR, Horizon Europe, LabCom et projets internationaux</li>
+                <li>Co-directions de thèses, thèses CIFRE et accueils de doctorants</li>
+                <li>Articles scientifiques, numéros spéciaux et conférences</li>
+                <li>Keynotes, séminaires, écoles thématiques et workshops</li>
+                <li>Expertises scientifiques, jurys de thèse et HDR</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contact scientifique</h2>
+
+        <p>
+            Pour une collaboration scientifique, un projet de recherche, une thèse,
+            une conférence, une expertise ou un échange académique, vous pouvez me contacter directement.
+        </p>
+
+        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Contact%20scientifique%20-%20Collaboration%20recherche" class="btn">
+            Me contacter pour une collaboration scientifique
+        </a>
+
+        <a href="https://www.linkedin.com/in/marc-zolghadri/" target="_blank" class="btn btn-secondary">
+            Voir mon profil LinkedIn
+        </a>
+
+        <a href="RA-MarcZolghadri.pdf" target="_blank" class="btn btn-secondary">
+            Télécharger le rapport d’activités complet
+        </a>
+    </div>
+
+    <div class="bibliography" id="bibliographie">
+        <h2>Bibliographie</h2>
+
+        <p>
+            Cette section reprend les publications scientifiques, communications,
+            articles techniques, chapitres d’ouvrage et contributions associées à mes activités de recherche.
+        </p>
+
+        <details open>
+            <summary>Articles dans des revues avec comité de lecture</summary>
+
+            <ol>
+                <li>Liu, Y., Zolghadri, M. What is happening in product obsolescence management? Three decades of review from 1993 to 2023. <em>Research in Engineering Design</em>, 37, 9, 2026. https://doi.org/10.1007/s00163-026-00470-8</li>
+                <li>Saad, E., Besbes, M., Zolghadri, M. et al. Enhancing obsolescence forecasting with deep generative data augmentation: a semi-supervised framework for low-data industrial applications. <em>Journal of Intelligent Manufacturing</em>, 2025. https://doi.org/10.1007/s10845-025-02746-7</li>
+                <li>Karaani, S., Zolghadri, M., Besbes, M., Baron, C., Barkallah, M. et al. Systematic analysis of the links between Obsolescence - Shortage and Reliability - Maintainability - Availability. <em>IEEE Access</em>, 2025. https://doi.org/10.1109/ACCESS.2025.3570107</li>
+                <li>Souifi, A., Cherfi-Boulanger, Z., Zolghadri, M. Uncertainty of Key Performance Indicators for Industry 4.0: a methodology based on belief function theory. <em>Computers in Industry</em>, 2022. https://doi.org/10.1016/j.compind.2022.103666</li>
+                <li>Kechaou, F., Addouche, S.-A., Zolghadri, M. Overall Equipment Effectiveness: definitions, measures and selection method. <em>Production Planning and Control</em>, 2022. https://doi.org/10.1080/09537287.2022.2037166</li>
+                <li>Soltan, A., Addouche, S., Zolghadri, M. A methodology to determine the resilience of a system to obsolescence during the design phase. <em>Research in Engineering Design</em>, 2021. https://doi.org/10.1007/s00163-021-00373-w</li>
+                <li>Zolghadri, M., Addouche, S.-A., Baron, C., Boissie, K., Soltan, A. Obsolescence, rarefaction and their propagation. <em>Research in Engineering Design</em>, 2021. https://doi.org/10.1007/s00163-021-00372-x</li>
+                <li>Trabelsi, I., Zolghadri, M., Zeddini, B. Prediction of obsolescence degree as a function of time: a mathematical formulation. <em>Computers in Industry</em>, 2021. https://doi.org/10.1016/j.compind.2021.103470</li>
+                <li>Attal, J.-P., Malek, M., Zolghadri, M. Overlapping community detection using core label propagation algorithm and belonging functions. <em>Applied Intelligence</em>, 2021. https://doi.org/10.1007/s10489-021-02250-4</li>
+                <li>Masmoudi, M., Zolghadri, M., Leclaire, P. A posteriori identification of dependencies between continuous variables for the engineering change management. <em>Research in Engineering Design</em>, 31, 257–274, 2020. https://doi.org/10.1007/s00163-020-00338-5</li>
+                <li>Besbes, M., Zolghadri, M., Costa Affonso, R. et al. 3D facility layout problem. <em>Journal of Intelligent Manufacturing</em>, 2020. https://doi.org/10.1007/s10845-020-01603-z</li>
+                <li>Besbes, M., Zolghadri, M., Costa Affonso, R. et al. A methodology for solving facility layout problem considering barriers: genetic algorithm coupled with A* search. <em>Journal of Intelligent Manufacturing</em>, 31, 615–640, 2020. https://doi.org/10.1007/s10845-019-01468-x</li>
+                <li>Zolghadri, M., Eckert, C., Girard, P., Zouggar, S. Power-based supplier selection in product development projects. <em>Computers in Industry</em>, 2011, 12(5), 487–500.</li>
+                <li>Zolghadri, M., Baron, C., Girard, P. Innovative product and network of partners co-design: context, problematic and some exploratory results. <em>Concurrent Engineering</em>, 2008, 16, 9–21.</li>
+                <li>Zolghadri, M., Olivier, C., Bourrières, J.-P. Close-optimal production and procurement policy for a X-network of added value using lexicographic linear goal programming. <em>Computers and Industrial Engineering</em>, 2007, 1–19.</li>
+                <li>Essabbar, D., Zrikem, M., Zolghadri, M., Elmarzouqi, N., Ayadi, A. Dependencies in enterprise networks and its influence on a focal company’s global strategy: a theoretical analysis. <em>International Journal of Risk Assessment and Management</em>. https://doi.org/10.1504/IJRAM.2016.079607</li>
+                <li>Essabbar, D., Zolghadri, M., Zrikem, M., Ayadi, A. Rule-based modelling of dependencies among activities in collaborative partnership. <em>Journal of Design Research</em>, 2014, 12(1/2), 32–51.</li>
+                <li>Amrani-Zouggar, A., Zolghadri, M. Analysing the shift of product management strategies concerning ETO products. <em>Journal of Design Research</em>, 2014, 12(1/2), 10–29.</li>
+                <li>Zolghadri, M., Amrani, A., Zouggar, S., Girard, P. Power as a high level criterion in partners selection process. <em>International Journal of Computer Integrated Manufacturing</em>, 2011, 24(4), 312–327.</li>
+                <li>Zolghadri, M., Girard, P., Baron, C., Aldanondo, M. A general framework for new product development projects. <em>International Journal of Technology Management</em>, 2011, 55(3/4), 250–262.</li>
+                <li>Serna, L., Merlo, C., Zolghadri, M., Minel, S. Actors’ networks management for design co-ordination. <em>International Journal on Interactive Design and Manufacturing</em>, 2011, 5(1), 67–71.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Products to learn or to use. <em>International Journal of Product Development</em>, 2011, 13(1), 84–94.</li>
+                <li>Zolghadri, M., Baron, C., Girard, P. Modelling mutual dependencies between products architecture and network of partners. <em>International Journal of Product Development</em>, 2010, 9(1), 43–52.</li>
+                <li>Zolghadri, M., Geneste, L., Girard, P. Conformity measures and their aggregation. <em>International Journal of Product Lifecycle Management</em>, 2007, 2(4), 386–406.</li>
+                <li>Zolghadri, M., Bourrières, J.-P. Data Aggregation Mechanisms for Production Planning Function of Firms. <em>Journal of Decision Systems</em>, 2006, 15(4), 425.</li>
+                <li>Girard, P., Deschamps, J.-C., Zolghadri, M. Collaborative engineering design spaces to support product life cycle management. <em>International Journal of Agile Manufacturing</em>, 2006, 9(1), 43–52.</li>
+                <li>Zolghadri, M., Lecompte, T., Bourrières, J.-P. Design of Decision Support Systems for Extended Enterprise. <em>Journal of Studies in Informatics and Control</em>, 2002, 11(1).</li>
+                <li>Zolghadri, M., Deschamps, J.-C., Bourrières, J.-P. Modélisation agrégée des systèmes de production discrète dans (Max,+). <em>JESA</em>, 2000, 34(10), 1295–1314.</li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Articles Procedia CIRP et extensions issues de conférences</summary>
+
+            <ol>
+                <li>Besbes, M., Zolghadri, M., Costa Affonso, R. A method to solve 2D Facility Layout Problem with equipment inputs/outputs constraints using meta-heuristics algorithms. <em>Procedia CIRP</em>, 104, 1698–1703, 2021. https://doi.org/10.1016/j.procir.2021.11.286</li>
+                <li>Besbes, M., Idel Mahjoub, Y., Bonte, T., Berger, T., Sallez, Y., Zolghadri, M. Solving Facility Layout Problem with safety consideration of Reconfigurable Manufacturing and Assembly Systems. <em>Procedia CIRP</em>, 104, 1942–1947, 2021. https://doi.org/10.1016/j.procir.2021.11.328</li>
+                <li>Salas, S., Zolghadri, M., Vingerhoeds, R., Baron, C. Identification and Assessment of Obsolescence for Complex Systems. <em>Journal of Integrated Design and Process Science</em>, 2021. https://doi.org/10.3233/JID-210018</li>
+                <li>Besbes, M., Zolghadri, M., Costa Affonso, R. Performance comparison of Particle Swarm Optimization and Genetic Algorithm combined with A* search for solving Facility Layout Problem. <em>Journal of Integrated Design and Process Science</em>. https://doi.org/10.1016/j.procir.2021.11.286</li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Articles Techniques de l’Ingénieur</summary>
+
+            <ol>
+                <li>Baron, C., Zolghadri, M., Addouche, S.-A., Argotti, Y., Boissie, K. Obsolescence : un phénomène de société ? <em>Techniques de l’Ingénieur</em>, H7000 v2, 2021. https://doi.org/10.51257/a-v2-h7000</li>
+                <li>Baron, C., Argotti, Y., Zolghadri, M., Addouche, S.-A., Besbes, M., Boissie, K. Obsolescence des systèmes informatiques et du logiciel. <em>Techniques de l’Ingénieur</em>, H7002 v2, 2022. https://doi.org/10.51257/a-v2-h7002</li>
+                <li>Zolghadri, M., Vrignat, P., Besbes, M., Kratz, F. Maintien en condition opérationnelle et gestion de l’obsolescence. <em>Techniques de l’Ingénieur</em>, G7008 v1, 2023. https://doi.org/10.51257/a-v1-g7008</li>
+                <li>Trabelsi, I., Besbes, M., Zolghadri, M., Zeddini, B. Prédiction de l’obsolescence. <em>Techniques de l’Ingénieur</em>, G7028, 2023. https://doi.org/10.51257/a-v1-g7028</li>
+                <li>Orgiu, A., Baron, C., Zolghadri, M., Alinei, J. Obsolescence et perte des connaissances dans les organisations. <em>Techniques de l’Ingénieur</em>, 2023. https://doi.org/10.51257/a-v1-g7022</li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Communications dans des conférences internationales avec actes et comité de lecture</summary>
+
+            <ol>
+                <li>Ben Brahim, I., Zolghadri, M., Theillet, C., Dechamp, F., Hagani, F., Mingant, G. Augmented Reverse Engineering: A Holistic Approach for the Resilience of Complex Systems in the Face of Obsolescence. 2025. https://doi.org/10.1016/j.ifacol.2025.09.347</li>
+                <li>Karaani, S., Zolghadri, M., Baron, C., Nilchiani, R., Besbes, M., Natesh Babu, R. S. Obsolescence vs Reliability - Availability - Maintainability: Petri nets modelling for mission-critical systems. ESREL 2025, Stavanger, Norway.</li>
+                <li>Besbes, M., Vrignat, P., Zolghadri, M., Kratz, F. Integrated Model for Maintaining Operational Conditions and Managing Obsolescence. ESREL 2025, Norway.</li>
+                <li>Nouar, M., Souifi, A., Decocq, B., Zolghadri, M. System Health Evaluation for Enhanced Resilience of Telecom Networks. ESREL 2025, Stavanger, Norway.</li>
+                <li>Zolghadri, M., Karaani, S., Natesh Babu, R. S., Nilchiani, R. Engineering the Ecology of Systems’ Obsolescence. EESO, IIOM International Conference, Paris 2025.</li>
+                <li>Karaani, S., Zolghadri, M., Besbes, M., Baron, C. Obsolescence and Shortages in Long-Lifespan Systems: Impacts on Reliability, Maintainability, and Availability. IIOM Conference, Paris 2025.</li>
+                <li>Natesh Babu, R. S., Nilchiani, R., Zolghadri, M., Karaani, S. Managing Obsolescence in Space Systems: Lessons from NASA and ESA for Long-Term Sustainability. IIOM International Conference, Paris 2025.</li>
+                <li>Mokraoui, S., Costa-Afonso, R., Besbes, M., Zolghadri, M., Baron, C. Environmental impact characterization of obsolescence remediation solutions in long-life product. PLM 2025.</li>
+                <li>Karaani, S., Besbes, M., Zolghadri, M., Baron, C., Barkallah, M., Haddar, M. Hierarchical Modelling of the Impact of Obsolescence on System Availability. MIM 2025, Norway.</li>
+                <li>Besbes, M., Zolghadri, M., Kanu, C. ARIANE Method: Analysis of Obsolescence Risks, Impacts, Criticality and their Monitoring. MIM 2025, Norway.</li>
+                <li>Liu, Y., Karaani, S., Zolghadri, M. An Approach for Implementing Obsolescence Management Strategies to Extend Product Service Lifespan. Procedia CIRP, CIRP LCE 2025.</li>
+                <li>Nouar, M., Souifi, A., Decocq, B., Zolghadri, M. Obsolescence Forecasting of Intel Processors: A Transformers Approach. Best Industrial Paper Award, IFAC/INSTICC IN4PL 2024, Porto, Portugal.</li>
+                <li>Souifi, A., Zolghadri, M. A Novel Method for Obsolescence Risk Assessment in Complex Systems: Integrating Skills and Documentation Obsolescence. IFAC-PapersOnLine, 2025.</li>
+                <li>Souifi, A., Zolghadri, M. Obsolescence Risk Assessment: Key Challenges and Practical Lessons. <em>IFAC-PapersOnLine</em>, 58(19), 486–491, 2024. https://doi.org/10.1016/j.ifacol.2024.09.259</li>
+                <li>Karaani, S., Besbes, M., Zolghadri, M., Baron, C., Barkallah, M., Haddar, M. Do Obsolescence and Shortages have an impact on Reliability, Maintainability and Availability? IFAC AMEST 2024. https://doi.org/10.1016/j.ifacol.2024.08.136</li>
+                <li>Kanu, C., Besbes, M., Zolghadri, M. An Obsolescence Management Model for the Aerospace Industry of Developing Nations using the SORA tool. TRA 2024, Dublin, Ireland.</li>
+                <li>Saad, E., Besbes, M., Bourgeois, V., Czmil, V., Zolghadri, M. A New Hybrid Approach for Identifying Obsolescence Features Applied to Railway Signaling Infrastructure. TRA 2024, Ireland.</li>
+                <li>Mokraoui, S., Besbes, M., Zolghadri, M., Baron, C. Obsolescence management: Criteria related to its context and its mitigation techniques. <em>IFAC-PapersOnLine</em>, 58(19), 492–497, 2024. https://doi.org/10.1016/j.ifacol.2024.09.260</li>
+                <li>Besbes, M., Zolghadri, M. Understanding obsolescence and shortage in French industry: An empirical analysis. <em>IFAC-PapersOnLine</em>, 58(8), 300–305, 2024.</li>
+                <li>Ben Brahim, I., Zolghadri, M., Theillet, C., Dechamp, F. Resilience Strategies and Techniques to Extend the Lifespan of Complex Systems Dealing with Obsolescence. <em>IFAC-PapersOnLine</em>, 58(8), 312–317, 2024. https://doi.org/10.1016/j.ifacol.2024.08.139</li>
+                <li>Ben Brahim, I., Zolghadri, M., Theillet, C., Dechamp, F. Despecialization: a systematic approach to (re-)engineer systems ensuring a better resilience to obsolescence and shortages. <em>Procedia CIRP</em>, 120, 828–833, 2023. https://doi.org/10.1016/j.procir.2023.09.083</li>
+                <li>Kanu, C., Besbes, M., Zolghadri, M. Obsolescence Management in the Aerospace Industry of Developing Nations. IIOM International Conference, London, UK, 2023.</li>
+                <li>Zolghadri, M., Besbes, M., Bourgeois, V., Saad, E. Micro-electronic Chips shortages and obsolescence: an empirical study. 56th CIRP CMS, South Africa, <em>Procedia CIRP</em>, 120, 1570–1575, 2023. https://doi.org/10.1016/j.procir.2023.09.216</li>
+                <li>Sarramaigna, P., Besbes, M., Zolghadri, M., Sadoul, P. O. Modelling Industry 4.0 transformation: a comparative approach between academic literature and French companies’ transformation cases. 56th CIRP CMS, South Africa, <em>Procedia CIRP</em>, 120, 786–791, 2023. https://doi.org/10.1016/j.procir.2023.09.076</li>
+                <li>Ben Brahim, I., Zolghadri, M., Theillet, C., Dechamp, F. Déspécialisation : une démarche systématique de la (ré)ingénierie des systèmes pour une meilleure résilience face à l’obsolescence et à la pénurie. 1er congrès annuel SAGIP, 2023.</li>
+                <li>Besbes, M., Zolghadri, M. Inventory sizing of components at risk of obsolescence or shortage using genetic algorithm. <em>Procedia CIRP</em>, 120, 1630–1635, 2023.</li>
+                <li>Souifi, A., Cherfi, Z., Zolghadri, M., Barkallah, M., Haddar, M. Le jumeau numérique dans le pilotage de performance. 17ème colloque national S.mart AIP-PRIMECA, 2021.</li>
+                <li>Souifi, A., Cherfi-Boulanger, Z., Zolghadri, M., Barkallah, M., Haddar, M. From Big Data to Smart Data: Application to performance management. <em>IFAC-PapersOnLine</em>, 54(1), 857–862, 2021. https://doi.org/10.1016/j.ifacol.2021.08.100</li>
+                <li>Zolghadri, M., Besbes, M. A methodology for health assessment using Genetic algorithm. IIOM International Conference, Munich, Germany, 2022.</li>
+                <li>Trabelsi, I., Zeddini, B., Zolghadri, M., Barkallah, M., Haddar, M. Obsolescence Prediction based on Joint Feature Selection and Machine Learning Techniques. International Conference on Agents and Artificial Intelligence, 2021.</li>
+                <li>Trabelsi, I., Zeddini, B., Zolghadri, M., Barkallah, M., Haddar, M. Prédiction du degré d’obsolescence en utilisant des techniques d’apprentissage automatique. CIGI QUALITA, 2021.</li>
+                <li>Besbes, M., Zolghadri, M., Costa Affonso, R. A method to solve 2D Facility Layout Problem with machines orientation using meta-heuristics algorithms. CIRP-CMS, Athens, 2021.</li>
+                <li>Besbes, M., Idel Mahjoub, Y., Bonte, T., Berger, T., Sallez, Y., Zolghadri, M. Solving Facility Layout Problem with safety consideration of Reconfigurable Manufacturing and Assembly Systems. CIRP Conference on Manufacturing Systems, Athens, 2021.</li>
+                <li>Soltan, A., Zolghadri, M., Addouche, S.-A. L’ingénierie des systèmes et les réseaux bayésiens pour la conception résiliente à l’obsolescence. CIGI QUALITA, 2021.</li>
+                <li>Boissie, K., Vigier, T., Zolghadri, M., Addouche, S.-A. Business Intelligence and Obsolescence Engineering: Prediction, Performance and Innovation, Linked Destinies. ASME International Design Engineering Technical Conference, 2021. https://doi.org/10.1115/DETC2021-66734</li>
+                <li>Soltan, A., Zolghadri, M., Addouche, S.-A. Design for Obsolescence Resilience. ICoRD 2020, IIT Bombay, India.</li>
+                <li>Salas, S., Baron, C., Zolghadri, M. Addressing Obsolescence from day one in the conceptual phase of complex systems as a design constraint. PLM 2020.</li>
+                <li>Zolghadri, M., Baron, C. Obsolescence engineering: challenges and ongoing initiatives in France. IIOM Conference, 2021.</li>
+                <li>Trabelsi, I., Zeddini, B., Zolghadri, M. A FMECA-based risk assessment approach for proactive obsolescence management. PLM 2020.</li>
+                <li>Zolghadri, M., Vingerhoeds, R., Baron, C., Salas, S. Analysing the impacts of system obsolescence based on system architecture models. TMCE 2020.</li>
+                <li>Kechaou, F., Zolghadri, M., Addouche, S.-A. Some preconizations on the transformation of a cause-effect diagram into bayesian network. TMCE 2020.</li>
+                <li>Besbes, M., Zolghadri, M., Costa Affonso, R., Masmoudi, F., Haddar, M. Comparison of evolution algorithms coupled with A* search for solving facility layout problem. TMCE 2020.</li>
+                <li>Masmoudi, M., Leclaire, P., Zolghadri, M., Haddar, M. Modelling dependencies in Engineering Change Management. CMSM 2015, Hammamet, Tunisia. https://doi.org/10.1007/978-3-319-17527-0_16</li>
+                <li>Masmoudi, M., Leclaire, P., Zolghadri, M., Haddar, M. Modelling Dependency identification for Engineering Change Management: an example of Computer-Aided Design based approach. ICED 2015, Milan, Italy.</li>
+                <li>Zolghadri, M., Couffin, F., Leclaire, P., Collart-Dutilleul, S. Complex systems renewal: positioning, concepts and architectural issues. IFAC World Congress, Cape Town, South Africa, 2014.</li>
+                <li>Essabbar, D., Zolghadri, M., Zrikem, M., Ayadi, A. The effect of power and dependency on business relationships between partners in supply chain. Gestion Opérationnelle de la Logistique, 2014.</li>
+                <li>Zhang, X., Zolghadri, M., Leclaire, P. A Systematic Framework of Change Propagation in Product Development Project. TMCE 2014.</li>
+                <li>Zolghadri, M., Couffin, F., Cheutet, V., Bourcier, C., Costa Affonso, R., Leclaire, P. Structuring Systems and Related Research Challenges. MCPL 2013.</li>
+                <li>Cheutet, V., Zolghadri, M., Couffin, F., Leclaire, P., Costa Affonso, R., Bourcier, C. Challenges in Knowledge Management for Structuring Systems. PLM 2013.</li>
+                <li>Zhang, X., Zolghadri, M., Leclaire, P., Girard, P. A co-evolution oriented change analysis framework in product development projects. MCPL 2013.</li>
+                <li>Costa Affonso, R., Liu, Y., Zolghadri, M. A Global Framework of Activities Integrating Product &amp; Supply Chain Design. MCPL 2013.</li>
+                <li>Amrani, A., Zolghadri, M. Shifting of product management strategy for optimizing ETO product leadtimes. TMCE 2012, Karlsruhe, Germany.</li>
+                <li>Essabbar, D., Zolghadri, M. Product development process with multiple partners: dependencies between activities. TMCE 2012, Karlsruhe, Germany.</li>
+                <li>Essabbar, D., Zolghadri, M., Zrikem, M., Ayadi, A. Le pouvoir dans un réseau de partenaires. CI-SIL 2011.</li>
+                <li>Liu, Y., Zolghadri, M. A Product-oriented Power Taxonomy Framework. 12th IFIP Working Conference on Virtual Enterprises, Brazil, 2011.</li>
+                <li>Liu, Y., Zolghadri, M. Power Interaction in Non-hierarchical Supply Chain Network. 17th International Conference on Concurrent Enterprising, Aachen, Germany, 2011.</li>
+                <li>Essabbar, D., Zolghadri, M., Zrikem, M., Ayadi, A., Girard, P. Formalisation des dépendances entre les activités : une étude exploratoire. 7th International Conference on Integrated Design and Production, Oujda, Morocco, 2011.</li>
+                <li>Zolghadri, M., Eckert, C., Rasoulifar, R. Modeling decisions and data dependencies in Engineering to order project management. DSM 2010, Cambridge, UK.</li>
+                <li>Zolghadri, M., Rasoulifar, R., Zouggar, S., Girard, P. Co-Evolution of Products and Network of partners, CEPS framework. ADM 2010, Nottingham, UK.</li>
+                <li>Zhang, X., Zolghadri, M., Girard, P. Changes Handling Architecture for Co-Evolution of Products and Networks of Partners. ERIMA 2010, Wiesbaden, Germany.</li>
+                <li>Scholz-Reiter, B., Heger, J., Meinke, C., Zolghadri, M., Rasoulifar, R. Supporting non-hierarchical supply chain network in the electronic industry. ICE 2010, Lugano, Switzerland.</li>
+                <li>Rasoulifar, R., Zolghadri, M., Eckert, C. The need for a tool to exchange information in non-hierarchical network of the electronic industry: a European Project. DESIGN 2010, Dubrovnik, Croatia.</li>
+                <li>Rasoulifar, R., Zhang, X., Zolghadri, M. A design support tool for integrating expert-user in the design process: case application on surgical instruments design. DESIGN 2010, Dubrovnik, Croatia.</li>
+                <li>Amrani, A., Zouggar, S., Zolghadri, M., Girard, P. Towards a collaborative approach to sustain engineer-to-order manufacturing. ICE 2010, Lugano, Switzerland.</li>
+                <li>Amrani, A., Zouggar, S., Zolghadri, M., Girard, P. Supporting framework to improve engineer-to-order product lead-time. IFAC MCPL 2010, Coimbra, Portugal.</li>
+                <li>Wehbe, A., Zolghadri, M., Baron, C. Structuration des critères de sélection de partenaires. 6e conférence internationale de la conception et la production intégrées, Fès, Maroc, 2009.</li>
+                <li>Monier, B., Zolghadri, M. Innovation Management in European Projects. APMS 2009, Bordeaux.</li>
+                <li>Zouggar, S., Zolghadri, M., Zhang, X., Girard, P. Network compatibility blocks as basis of partner selection. APMS 2009, Bordeaux.</li>
+                <li>Zolghadri, M., Eckert, C., Zouggar, S., Girard, P. A taxonomy of collaboration in supply chain. ICED 2009.</li>
+                <li>Zouggar, S., Zolghadri, M., Girard, P. Performance improvement in supply chain design through product architecture. INCOM 2009, Moscow, Russia.</li>
+                <li>Robin, V., Brunel, S., Zolghadri, M., Girard, P. System Lifecycle Management: preliminary concepts and tools. IFAC INCOM 2009.</li>
+                <li>Zouggar, S., Zolghadri, M., Girard, P. Modelling product and partners network architectures to identify hidden dependencies. CIRP Design Conference 2009, Cranfield University.</li>
+                <li>Robin, V., Brunel, S., Zolghadri, M., Girard, P. Preliminary concepts and tools for System Lifecycle Management. Competitive Design - 19th CIRP Design Conference, Cranfield University Press, 2009.</li>
+                <li>Eckert, C., Zolghadri, M., Keller, R., Clarkson, J. Indirect Connection in a Supply Chain: Visualisation and Analysis. DSM 2008, Stockholm, Sweden.</li>
+                <li>Merlo, C., Zolghadri, M., Minel, S. Actors’ networks management to set up design teams. Virtual Concept - IDMME 2008, Beijing, China.</li>
+                <li>Minel, S., Merlo, C., Zolghadri, M. Analysing collaboration in order to propose a framework for supporting management of co-design network. ERIMA 2008, Porto, Portugal.</li>
+                <li>Moradi, M., Brunel, S., Zolghadri, M., Vallespir, B. Design for Learning and Teaching, a Knowledge-Based Approach to Design Products. PAKM 2008, Tokyo, Japan.</li>
+                <li>Wehbe, A., Zolghadri, M., Baron, C. L’étude des dépendances logiques et temporelles au sein d’un projet de développement d’un nouveau produit. MAJESTIC 2008, Marseille, France.</li>
+                <li>Zolghadri, M., Benchimol, P., Baron, C. A practical comparison between new product development projects performed by an SME and a worldwide company: similarities and differences. IDMME 2008, Beijing, China.</li>
+                <li>Brunel, S., Zolghadri, M., Moradi, M., Girard, P. Design for teaching and learning. EXPPAND 2008.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Concevoir pour apprendre et/ou transmettre. RAIFFET 2008, Tunis.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Products to learn or products to be used? ICADAM 2008, Haikou/Sanya, China.</li>
+                <li>Zouggar, S., Zolghadri, M., Girard, P. From customer needs to partners network specifications: design, manufacturing and supply. ERIMA 2008, Portugal.</li>
+                <li>Alix, T., Zolghadri, M. Service orientation for manufacturing firms: challenges and innovation management. ERIMA 2007, France.</li>
+                <li>Baron, C., Zolghadri, M., Aldanondo, M., Vareilles, E., Estève, D., Geneste, L. How a close association of System Design, Technical Management and Acquisition, Supply processes can improve system design engineering? 7e Congrès international de génie industriel, Canada, 2007.</li>
+                <li>Brunel, S., Moradi, M., Zolghadri, M., Girard, P. To design product for learning. International Symposium for Engineering Education, Dublin, Ireland, 2007.</li>
+                <li>Vareilles, E., Aldanondo, M., Baron, C., Zolghadri, M., Lahmar, Y., Geneste, L. Coupling Product Development and Project Management with Constraint: a Prospective Work. PLM 2007, Milan, Italy.</li>
+                <li>Vareilles, E., Aldanondo, M., Baron, C., Geneste, L., Zolghadri, M., Lahmar, Y. Aider à la décision simultanément en développement de produit et en gestion de projet en utilisant des approches par contraintes. 7e Congrès international de génie industriel, Canada, 2007.</li>
+                <li>Zolghadri, M., Baron, C., Girard, P., Aldanondo, M., Vareilles, E. Linking product architecture and network of partners. PLM 2007, Italy.</li>
+                <li>Zolghadri, M., Baron, C., Girard, P., Aldanondo, M., Vareilles, E., Geneste, L. The SPIN Co-Design paradigm. 7e Congrès international de génie industriel, Canada, 2007.</li>
+                <li>Zolghadri, M., Baron, C., Aldanondo, M., Girard, P. A general framework for new product development projects. ERIMA 2007, France.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Des produits pour apprendre ou des produits à utiliser ? GI 2007.</li>
+                <li>Zolghadri, M., Girard, P. Co-design of innovative product and Network of firms: catalysts for co-working. DESIGN 2006, Dubrovnik, Croatia.</li>
+                <li>Baron, C., Zolghadri, M., Estève, D., Geneste, L., Aldanondo, M., Vareilles, E. Product and Project Co-design: what do system engineering standards recommend? Virtual Concept 2006, Playa del Carmen, Mexico.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Product: something between learning and using. Virtual Concept 2006, Playa del Carmen, Mexico.</li>
+                <li>Zolghadri, M., Girard, P. Co-design of Innovative Products and Value Network. IMACS Multiconference on Computational Engineering in Systems Applications, Beijing, China, 2006.</li>
+                <li>Baron, C., Zolghadri, M. Innovative product and Value network co-design: context, problematic and some exploratory results. Virtual Concept 2006, Playa del Carmen, Mexico.</li>
+                <li>Alix, T., Zolghadri, M., Bourrières, J.-P. A decision support system for production and procurement planning of enterprises X-networks. IEEE SMC 2004, The Hague, Netherlands.</li>
+                <li>Skould, B., Zolghadri, M. Capacity planning and scheduling in project oriented production. IFAC INCOM 2004, Salvador, Brazil.</li>
+                <li>Zolghadri, M., Bourrières, J.-P. Data aggregation in Production management systems: From mono-dimensional to bi-dimensional aggregators. SCI 2003, Orlando, USA.</li>
+                <li>Zolghadri, M., Deschamps, J.-C., Bourrières, J.-P. A Framework for the assessment of Supply Chain Management impacts on enterprise functions. GI 2003, Québec, Canada.</li>
+                <li>Zolghadri, M., Doumeingts, G., Vallespir, B. Enterprise modelling and IT tools for enterprises. MCPL 2000, Grenoble, France.</li>
+                <li>Zolghadri, M., Bourrières, J.-P. Un cadre formel pour la conception d’un système de tableaux de bord en production : application à l’évaluation du taux de disponibilité d’une ressource agrégée. CIFA 2000, Lille, France.</li>
+                <li>Zolghadri, M., Lecompte, T., Bourrières, J.-P. Design of decision support systems for extended enterprises. Advanced Summer Institute, Bordeaux, France, 2000.</li>
+                <li>Zolghadri, M., Lancella, P., Bérard, C. La méthode des zones temporelles : méthode d’évaluation du temps de passage des produits. Congrès international du génie industriel, Montréal, Canada, 1995.</li>
+                <li>Zolghadri, M., Bourrières, J.-P. Modélisation dynamique de l’entreprise en vue de l’évaluation du délai de production. Génie Industriel, Montréal, Canada, 1995.</li>
+                <li>Zolghadri, M., Moudden, A., Bourrières, J.-P., Doumeingts, G. A multi-agent approach in modelling and simulating decisional flows in advanced manufacturing systems. Advanced Summer Institute, Patras, Greece, 1994.</li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Communications dans des colloques sans actes ou sans comité de lecture</summary>
+
+            <ol>
+                <li>Zolghadri, M., Soltan, A., Addouche, S. L’obsolescence et conception résiliente. GDR-MACS, février 2020.</li>
+                <li>Addouche, S., Boissie, K., Zolghadri, M. L’obsolescence et la gestion de l’obsolescence chez un équipementier automobile. GDR-MACS, février 2020.</li>
+                <li>Zolghadri, M., Deschamps, J.-C., Girard, P. Interface specifications for facilitating collaborative product design processes between dislocated companies. IceCE 2003, Hangzhou, China.</li>
+                <li>Zolghadri, M. Les logiciels intégrés de gestion d’entreprise ERP. GDR-MACS, Lyon, 2001.</li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Articles dans des revues de haut niveau sans impact factor et autres revues</summary>
+
+            <ol>
+                <li>Wehbe, A., Zolghadri, M., Baron, C., Auriol, G. Advanced methodology for structuring partners selection criteria. <em>International Journal of Design and Innovation Research</em>, 2010, 5(1), 41–54.</li>
+                <li>Zhang, X., Zolghadri, M., Girard, P. Changes Handling Architecture for Co-Evolution of Products and Network of Partners. <em>International Journal of Projectics</em>, 2010, 41–62.</li>
+                <li>Zolghadri, M., Zouggar, S., Rasoulifar, R., Girard, P. Implication au plus tôt des fournisseurs dans les projets de développement de produits nouveaux : avantages, risques et impératifs. <em>Journal of Decision Systems</em>.</li>
+                <li>Zolghadri, M., Bourrières, J.-P. Data Aggregation Mechanisms for Production Planning Function of Firms. <em>Journal of Decision Systems</em>, 2006, 15(4), 425.</li>
+                <li>Zolghadri, M., Deschamps, J.-C., Bourrières, J.-P. Modélisation agrégée des systèmes de production discrète dans (Max,+). <em>JESA</em>, 2000, 34(10), 1295–1314.</li>
+                <li>Wehbé, A., Zolghadri, M., Baron, C. Sélection de partenaires dans un projet de conception de produit : proposition d’une approche de structuration des critères. <em>Revue Ingénierie Numérique Collaborative</em>, 2010.</li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Éditoriaux, ouvrage, chapitres et publication électronique</summary>
+
+            <ol>
+                <li>Zolghadri, M., Eckert, C. Co-evolution of Products and Networks of Partners. Éditorial du numéro spécial de l’<em>International Journal of Design Engineering</em>, 2009.</li>
+                <li>Eckert, C., Zolghadri, M. Exploring new perspectives in product development. Éditorial du numéro spécial de l’<em>International Journal of Product Development</em>, 2009.</li>
+                <li>Robin, V., Merlo, C., Zolghadri, M. Managing Design and New Product Development. Éditorial du numéro spécial du <em>Journal of Decision Systems</em>, 2010.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Une méthode stratégique pour la génération de la connaissance. <em>J3EA</em>, 2008. https://doi.org/10.1051/j3ea:2008039</li>
+                <li>Poler, R., Carnerio, L., Jasinski, T., Zolghadri, M., Pedrazzoli, P. <em>Intelligent non-hierarchical manufacturing networks</em>. Wiley, 2013. ISBN 978-1-84921-481-1.</li>
+                <li>Vrignat, P., Besbes, M., Zolghadri, M., Kratz, F. Maintenance in operational condition and obsolescence management in a sustainable operations management context. In <em>Evolution and Trends of Sustainable Approaches</em>, Elsevier, 2024, pp. 73–84.</li>
+                <li>Zolghadri, M., Eckert, C., Zhang, X., Liu, Y. Decision reference model. In <em>Intelligent non-hierarchical manufacturing networks</em>, Wiley, 2013.</li>
+                <li>Zolghadri, M. Innover avec vos fournisseurs. In <em>Déployer l’innovation – Méthodes, outils, pilotage et cas d’étude</em>, Techniques de l’Ingénieur, 2012, pp. 65–67.</li>
+                <li>Baron, C., Chelouah, R., Zolghadri, M. How to optimize System Design process by using heuristics? In <em>Foundation in Computational Intelligence</em>, Springer, 2008.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Products to learn or products to be used? In <em>Global Design to Gain a Competitive Edge</em>, Springer, 2008, pp. 303–312.</li>
+            </ol>
+        </details>
+
+        <details>
+            <summary>Communications dans des colloques nationaux avec actes et communications invitées</summary>
+
+            <ol>
+                <li>Zouggar, S., Zolghadri, M., Girard, P. Modélisation du lien architecture du produit / architecture du réseau de partenaires. JD-JN-MACS, Annecy, 2009.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Triple Instrumentation : une approche de la chaîne de valeur ajoutée de la création des connaissances. BEM Bordeaux École de Management, 2009.</li>
+                <li>Brunel, S., Zolghadri, M., Girard, P. Ingénition : une méthode stratégique pour la génération de la connaissance. 1ère Conférence Francophone Gestion des Connaissances, Société et Organisations, Troyes, 2008.</li>
+                <li>Zolghadri, M., Bourrières, J.-P. Un cadre formel pour la conception d’un système de tableaux de bord en production : application à l’évaluation du taux de disponibilité d’une ressource agrégée. CIFA 2000, Lille, 2000.</li>
+                <li>Zolghadri, M., Lecompte, T., Bourrières, J.-P. Design of Decision Support Systems for Extended Enterprise. ASI 2000, 2000.</li>
+                <li>Zolghadri, M., Doumeingts, G., Vallespir, B. Enterprise modelling and IT tools for enterprise. MCPL 2000, 2000.</li>
+                <li>Girard, P., Deschamps, J.-C., Zolghadri, M. Collaborative engineering design spaces. 10th ISPE International Conference on Concurrent Engineering: Research and Applications, Madeira, Portugal, 2003.</li>
+                <li>Zolghadri, M., Alix, T., Bourrières, J.-P. From Enterprise Modelling to Decision Support System for Virtual Enterprises. INCOM 2002, Vienna, Austria.</li>
+            </ol>
+        </details>
+
+        <p class="note">
+            La liste détaillée complète est également disponible dans le rapport d’activités téléchargeable au format PDF.
+        </p>
+    </div>
+
+    <div class="navigation">
+        <a href="orientation.html" class="btn btn-secondary">
+            Retour au portail
+        </a>
+
+        <a href="industrial.html" class="btn btn-secondary">
+            Voir le profil industriel
+        </a>
+
+        <a href="formation.html" class="btn btn-secondary">
+            Voir les formations professionnelles
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>
+            ISAE-Supméca · Laboratoire Quartz · IIOM · IFO
+        </p>
+    </div>
+
 </div>
 ```
 
 </body>
 </html>
-
