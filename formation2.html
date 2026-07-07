@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Zolghadri - Formation professionnelle en gestion de l’obsolescence</title>
+
+```
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        max-width: 1150px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f4f7f6;
+        color: #2c3e50;
+    }
+
+    .card {
+        background: white;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .portrait {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #2c3e50;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        color: #333333;
+        margin-bottom: 20px;
+        font-size: 1.05em;
+    }
+
+    .tagline {
+        max-width: 850px;
+        margin: 0 auto 25px auto;
+        font-size: 1.1em;
+    }
+
+    .section {
+        margin-top: 36px;
+        border-top: 1px solid #eee;
+        padding-top: 28px;
+    }
+
+    .section-intro {
+        max-width: 850px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        color: #444;
+    }
+
+    .hero {
+        background: #eef6fb;
+        border-left: 5px solid #3498db;
+        border-radius: 12px;
+        padding: 26px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .hero strong {
+        color: #2c3e50;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 22px;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 22px;
+    }
+
+    .box {
+        background: #f8f9fa;
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .box h3 {
+        margin-top: 0;
+    }
+
+    .benefit {
+        background: #f8f9fa;
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .benefit h3 {
+        margin-top: 0;
+    }
+
+    .format-box {
+        background: #f8f9fa;
+        border-left: 5px solid #2c3e50;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 20px;
+    }
+
+    .program {
+        counter-reset: step;
+        margin-top: 20px;
+    }
+
+    .program-step {
+        background: #f8f9fa;
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 14px;
+    }
+
+    .program-step::before {
+        counter-increment: step;
+        content: counter(step);
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        padding: 12px 18px;
+        margin: 8px 8px 8px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background: #2980b9;
+    }
+
+    .btn-secondary {
+        background: #7f8c8d;
+    }
+
+    .btn-secondary:hover {
+        background: #626e70;
+    }
+
+    .btn-dark {
+        background: #2c3e50;
+    }
+
+    .btn-dark:hover {
+        background: #1f2d3a;
+    }
+
+    .cta-section {
+        margin-top: 36px;
+        padding: 28px;
+        background: #eef6fb;
+        border-radius: 12px;
+        border-left: 5px solid #3498db;
+        text-align: center;
+    }
+
+    .note {
+        font-size: 0.92em;
+        color: #555;
+        margin-top: 12px;
+    }
+
+    .navigation {
+        margin-top: 30px;
+        text-align: center;
+        border-top: 1px solid #eee;
+        padding-top: 22px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 25px;
+        color: #555;
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 950px) {
+        .grid-3,
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        body {
+            margin: 20px auto;
+        }
+
+        .card {
+            padding: 25px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+        }
+
+        .hero {
+            text-align: center;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+    <div class="card">
+
+```
+    <div class="header">
+        <h1>Formation professionnelle en gestion de l’obsolescence</h1>
+
+        <img src="MarcZolghadri2022.jpeg"
+             alt="Marc Zolghadri"
+             class="portrait">
+
+        <p class="subtitle">
+            Marc Zolghadri · Professeur des Universités · ISAE-Supméca · Laboratoire Quartz
+        </p>
+
+        <p class="tagline">
+            Former les équipes industrielles à anticiper, structurer et piloter
+            les risques d’obsolescence, de pénurie, de MCO et de pérennité
+            des systèmes complexes.
+        </p>
+
+        <a href="https://www.isae-supmeca.fr/relations-industrielles/formation-continue/formations-courtes/gestion-de-l-obsolescence/" target="_blank" class="btn">
+            Voir la formation officielle ISAE-Supméca
+        </a>
+
+        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Demande%20de%20formation%20obsolescence%20-%20inter%20ou%20intra%20entreprise" class="btn btn-dark">
+            Demander une formation
+        </a>
+
+        <a href="orientation2.html" class="btn btn-secondary">
+            Retour au portail
+        </a>
+    </div>
+
+    <div class="hero">
+        <h2>Passer d’une obsolescence subie à une démarche proactive</h2>
+
+        <p>
+            Dans de nombreux secteurs industriels, les systèmes restent en service pendant
+            plusieurs décennies alors que les composants, logiciels, technologies, fournisseurs
+            ou compétences peuvent disparaître beaucoup plus rapidement.
+        </p>
+
+        <p>
+            La formation vise à donner aux participants une méthode claire pour
+            <strong>identifier les risques d’obsolescence, exploiter les informations disponibles,
+            structurer les décisions et construire une stratégie adaptée au cycle de vie
+            des équipements industriels</strong>.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Pourquoi former vos équipes ?</h2>
+
+        <p class="section-intro">
+            L’obsolescence n’est pas uniquement un problème d’achat de composants.
+            C’est un risque industriel qui touche la disponibilité, la maintenance,
+            les coûts, les fournisseurs, la conception et la durabilité des systèmes.
+        </p>
+
+        <div class="grid-3">
+            <div class="benefit">
+                <h3>Réduire les risques d’arrêt</h3>
+                <p>
+                    Identifier plus tôt les composants, fournisseurs ou technologies
+                    susceptibles de fragiliser la disponibilité d’un système critique.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <h3>Maîtriser les coûts MCO</h3>
+                <p>
+                    Éviter les décisions prises dans l’urgence : achats tardifs,
+                    redesign non planifié, remplacement prématuré ou stocks mal dimensionnés.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <h3>Anticiper les pénuries</h3>
+                <p>
+                    Mieux exploiter les signaux faibles, les PCN, les PDN,
+                    les évolutions fournisseurs et les risques de rupture d’approvisionnement.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <h3>Structurer une stratégie</h3>
+                <p>
+                    Passer d’une réponse réactive au cas par cas à une démarche organisée,
+                    documentée, pilotable et adaptée aux contraintes industrielles.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <h3>Allonger la durée de vie</h3>
+                <p>
+                    Soutenir la pérennité des équipements et éviter les remplacements
+                    prématurés lorsque des solutions de mitigation sont possibles.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <h3>Aligner les métiers</h3>
+                <p>
+                    Créer un langage commun entre maintenance, MCO, achats, qualité,
+                    supply chain, RSE, innovation, bureau d’études et direction technique.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Formation courte ISAE-Supméca</h2>
+
+        <div class="format-box">
+            <p>
+                La formation courte <strong>Gestion de l’Obsolescence</strong> est proposée
+                par ISAE-Supméca. Elle est destinée aux professionnels impliqués dans
+                la pérennité des systèmes industriels, le maintien en condition opérationnelle,
+                la maintenance, les achats, la supply chain, la qualité, la conception
+                ou la gestion du cycle de vie.
+            </p>
+
+            <ul>
+                <li><strong>Durée :</strong> 2 jours.</li>
+                <li><strong>Format :</strong> présentiel.</li>
+                <li><strong>Modalités :</strong> inter-entreprises ou intra-entreprise sur demande.</li>
+                <li><strong>Approche :</strong> méthodes, outils, cas pratiques et application industrielle.</li>
+            </ul>
+
+            <a href="https://www.isae-supmeca.fr/relations-industrielles/formation-continue/formations-courtes/gestion-de-l-obsolescence/" target="_blank" class="btn">
+                Consulter le programme officiel
+            </a>
+
+            <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Demande%20de%20session%20intra-entreprise%20-%20Gestion%20de%20l%27obsolescence" class="btn btn-dark">
+                Demander une session intra-entreprise
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Objectifs pédagogiques</h2>
+
+        <p class="section-intro">
+            À l’issue de la formation, les participants doivent être capables de mieux
+            comprendre, détecter, analyser et traiter les situations d’obsolescence.
+        </p>
+
+        <div class="program">
+            <div class="program-step">
+                <strong>Comprendre les fondamentaux</strong>
+                <p>
+                    Définir l’obsolescence, ses causes, ses formes, ses impacts
+                    et ses liens avec la pénurie, la maintenance, le MCO et le cycle de vie.
+                </p>
+            </div>
+
+            <div class="program-step">
+                <strong>Identifier les types et impacts d’obsolescence</strong>
+                <p>
+                    Reconnaître les obsolescences composants, logiciels, fournisseurs,
+                    procédés, compétences, documentation ou moyens de test.
+                </p>
+            </div>
+
+            <div class="program-step">
+                <strong>Exploiter les PCN / PDN</strong>
+                <p>
+                    Comprendre et utiliser les notifications de changement produit
+                    et d’arrêt de fabrication pour anticiper les risques et organiser
+                    les réponses.
+                </p>
+            </div>
+
+            <div class="program-step">
+                <strong>Construire une stratégie de gestion</strong>
+                <p>
+                    Définir des processus, rôles, indicateurs, priorités et plans d’action
+                    adaptés au contexte industriel de l’organisation.
+                </p>
+            </div>
+
+            <div class="program-step">
+                <strong>Choisir des solutions adaptées</strong>
+                <p>
+                    Comparer les options : stock, LTB, réparation, cannibalisation,
+                    substitution, émulation, redesign, rétro-ingénierie ou re-conception.
+                </p>
+            </div>
+
+            <div class="program-step">
+                <strong>Dialoguer avec les parties prenantes</strong>
+                <p>
+                    Mieux coordonner les échanges entre fournisseurs, achats, maintenance,
+                    qualité, bureaux d’études, programmes, direction technique et exploitants.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>À qui s’adresse cette formation ?</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Fonctions industrielles concernées</h3>
+                <ul>
+                    <li>Responsables maintenance et MCO</li>
+                    <li>Responsables industriels</li>
+                    <li>Directions techniques</li>
+                    <li>Ingénieurs systèmes et méthodes</li>
+                    <li>Responsables qualité</li>
+                    <li>Responsables achats et supply chain</li>
+                    <li>Responsables programmes ou cycle de vie produit</li>
+                    <li>Responsables RSE, innovation ou transformation industrielle</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Organisations concernées</h3>
+                <ul>
+                    <li>Entreprises exploitant des systèmes à longue durée de vie</li>
+                    <li>Industries soumises à forte criticité opérationnelle</li>
+                    <li>PME technologiques et ETI industrielles</li>
+                    <li>Grands groupes industriels</li>
+                    <li>Exploitants d’infrastructures critiques</li>
+                    <li>Organisations confrontées aux pénuries ou fins de vie composants</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Messages clés selon vos préoccupations</h2>
+
+        <div class="grid-3">
+            <div class="box">
+                <h3>Maintenance / MCO</h3>
+                <p>
+                    Anticiper les indisponibilités, sécuriser la réparabilité,
+                    limiter les ruptures et mieux relier obsolescence, stock,
+                    disponibilité et maintenance.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Achats / Supply chain</h3>
+                <p>
+                    Exploiter les informations fournisseurs, anticiper les fins de vie,
+                    identifier les alternatives et réduire les achats réalisés dans l’urgence.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Qualité / Conformité</h3>
+                <p>
+                    Documenter les décisions, structurer les processus,
+                    tracer les changements et sécuriser les échanges internes
+                    et externes.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Direction technique</h3>
+                <p>
+                    Construire une vision globale des risques d’obsolescence
+                    et choisir entre stock, substitution, réparation, redesign
+                    ou re-conception.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>RSE / Durabilité</h3>
+                <p>
+                    Allonger la durée de vie des équipements, éviter les remplacements
+                    prématurés et soutenir une logique de pérennité industrielle.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Innovation / Bureau d’études</h3>
+                <p>
+                    Intégrer l’obsolescence dès la conception, la re-conception
+                    ou l’évolution des architectures système.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Formats possibles</h2>
+
+        <div class="grid-3">
+            <div class="box">
+                <h3>Formation inter-entreprises</h3>
+                <p>
+                    Session courte permettant à des participants issus de différentes
+                    organisations de partager des problématiques communes et d’acquérir
+                    les fondamentaux.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Formation intra-entreprise</h3>
+                <p>
+                    Déclinaison possible pour une entreprise, avec adaptation aux métiers,
+                    aux systèmes concernés et aux cas industriels internes.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Sensibilisation ciblée</h3>
+                <p>
+                    Format plus court pour un comité de direction, une direction technique,
+                    un réseau de responsables maintenance, MCO, achats, qualité ou RSE.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Après la formation : aller plus loin</h2>
+
+        <p class="section-intro">
+            La formation peut être un point d’entrée vers une démarche plus structurée
+            de gestion de l’obsolescence.
+        </p>
+
+        <div class="grid-3">
+            <div class="box">
+                <h3>Diagnostic</h3>
+                <p>
+                    Évaluer la maturité de votre organisation et identifier
+                    les vulnérabilités prioritaires.
+                </p>
+                <a href="services2.html" class="btn">
+                    Voir les services
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>Feuille de route</h3>
+                <p>
+                    Structurer les rôles, processus, indicateurs, outils et actions
+                    à mettre en place.
+                </p>
+                <a href="services2.html" class="btn">
+                    Construire une démarche
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>Partenariat</h3>
+                <p>
+                    Monter un projet industriel, une CIFRE, un LabCom,
+                    un stage ou une action de recherche appliquée.
+                </p>
+                <a href="industrial2.html" class="btn">
+                    Voir les partenariats
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>Vous souhaitez former vos équipes ?</h2>
+
+        <p>
+            Vous pouvez consulter la page officielle de la formation ISAE-Supméca,
+            demander une session intra-entreprise ou me contacter pour qualifier
+            votre besoin.
+        </p>
+
+        <a href="https://www.isae-supmeca.fr/relations-industrielles/formation-continue/formations-courtes/gestion-de-l-obsolescence/" target="_blank" class="btn">
+            Voir la formation officielle
+        </a>
+
+        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Demande%20de%20formation%20obsolescence%20-%20inter%20ou%20intra%20entreprise" class="btn btn-dark">
+            Demander un échange
+        </a>
+
+        <a href="services2.html" class="btn btn-secondary">
+            Voir conseil et accompagnement
+        </a>
+
+        <p class="note">
+            Si le bouton ne s’ouvre pas automatiquement, vous pouvez écrire directement à :
+            <a href="mailto:Marc.Zolghadri@isae-supmeca.fr">Marc.Zolghadri@isae-supmeca.fr</a>
+        </p>
+    </div>
+
+    <div class="navigation">
+        <a href="orientation2.html" class="btn btn-secondary">
+            Retour au portail
+        </a>
+
+        <a href="services2.html" class="btn btn-secondary">
+            Conseil & accompagnement
+        </a>
+
+        <a href="industrial2.html" class="btn btn-secondary">
+            Profil industriel
+        </a>
+
+        <a href="scientific2.html" class="btn btn-secondary">
+            Profil scientifique
+        </a>
+
+        <a href="index.html" class="btn btn-secondary">
+            Page personnelle
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>
+            ISAE-Supméca · Quartz · IIOM · IFO · Formation professionnelle · Gestion de l’obsolescence
+        </p>
+    </div>
+
+</div>
+```
+
+</body>
+</html>
