@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Zolghadri - Profil industriel</title>
+
+```
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        max-width: 1150px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f4f7f6;
+        color: #2c3e50;
+    }
+
+    .card {
+        background: white;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .portrait {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #2c3e50;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        color: #333333;
+        margin-bottom: 20px;
+        font-size: 1.05em;
+    }
+
+    .tagline {
+        max-width: 880px;
+        margin: 0 auto 25px auto;
+        font-size: 1.1em;
+    }
+
+    .section {
+        margin-top: 36px;
+        border-top: 1px solid #eee;
+        padding-top: 28px;
+    }
+
+    .section-intro {
+        max-width: 850px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        color: #444;
+    }
+
+    .hero {
+        background: #eef6fb;
+        border-left: 5px solid #3498db;
+        border-radius: 12px;
+        padding: 26px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .hero strong {
+        color: #2c3e50;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 22px;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 22px;
+    }
+
+    .box {
+        background: #f8f9fa;
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .box h3 {
+        margin-top: 0;
+    }
+
+    .problem {
+        background: #f8f9fa;
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .problem h3 {
+        margin-top: 0;
+    }
+
+    .focus {
+        background: #f8f9fa;
+        border-left: 5px solid #2c3e50;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 20px;
+    }
+
+    .proof {
+        background: #eef6fb;
+        border-left: 5px solid #3498db;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 20px;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        padding: 12px 18px;
+        margin: 8px 8px 8px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background: #2980b9;
+    }
+
+    .btn-secondary {
+        background: #7f8c8d;
+    }
+
+    .btn-secondary:hover {
+        background: #626e70;
+    }
+
+    .btn-dark {
+        background: #2c3e50;
+    }
+
+    .btn-dark:hover {
+        background: #1f2d3a;
+    }
+
+    .process {
+        counter-reset: step;
+        margin-top: 20px;
+    }
+
+    .process-step {
+        background: #f8f9fa;
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 14px;
+    }
+
+    .process-step::before {
+        counter-increment: step;
+        content: counter(step);
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .cta-section {
+        margin-top: 36px;
+        padding: 28px;
+        background: #eef6fb;
+        border-radius: 12px;
+        border-left: 5px solid #3498db;
+        text-align: center;
+    }
+
+    .note {
+        font-size: 0.92em;
+        color: #555;
+        margin-top: 12px;
+    }
+
+    .navigation {
+        margin-top: 30px;
+        text-align: center;
+        border-top: 1px solid #eee;
+        padding-top: 22px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 25px;
+        color: #555;
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 950px) {
+        .grid-3,
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        body {
+            margin: 20px auto;
+        }
+
+        .card {
+            padding: 25px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+        }
+
+        .hero {
+            text-align: center;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+    <div class="card">
+
+```
+    <div class="header">
+        <h1>Profil industriel</h1>
+
+        <img src="MarcZolghadri2022.jpeg"
+             alt="Marc Zolghadri"
+             class="portrait">
+
+        <p class="subtitle">
+            Marc Zolghadri · Professeur des Universités · ISAE-Supméca · Laboratoire Quartz
+        </p>
+
+        <p class="tagline">
+            Expertise industrielle en gestion de l’obsolescence, MCO, pérennité des systèmes,
+            re-conception, résilience, aide à la décision et partenariats recherche-industrie.
+        </p>
+
+        <a href="services2.html" class="btn btn-dark">
+            Discuter d’un besoin industriel
+        </a>
+
+        <a href="formation2.html" class="btn">
+            Former mes équipes
+        </a>
+
+        <a href="orientation2.html" class="btn btn-secondary">
+            Retour au portail
+        </a>
+    </div>
+
+    <div class="hero">
+        <h2>Des systèmes qui durent plus longtemps que leurs composants</h2>
+
+        <p>
+            De nombreuses organisations industrielles exploitent des systèmes dont la durée de vie
+            dépasse largement celle des composants, logiciels, fournisseurs, procédés, moyens de test
+            ou compétences nécessaires à leur maintien en service.
+        </p>
+
+        <p>
+            Mon expertise consiste à aider les industriels à <strong>identifier, comprendre,
+            modéliser et traiter les risques d’obsolescence</strong>, afin de préserver
+            la disponibilité opérationnelle, maîtriser les coûts, sécuriser le MCO
+            et prolonger la durée de vie utile des systèmes.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Les problèmes industriels que je peux aider à traiter</h2>
+
+        <p class="section-intro">
+            L’obsolescence se manifeste rarement comme un problème isolé.
+            Elle provoque souvent des effets en cascade sur la maintenance,
+            les achats, la qualité, la supply chain, la conception et l’exploitation.
+        </p>
+
+        <div class="grid-3">
+            <div class="problem">
+                <h3>Composants indisponibles</h3>
+                <p>
+                    Fin de vie, arrêt de production, pénurie, fournisseur unique,
+                    absence d’équivalent qualifié ou incertitude sur les alternatives.
+                </p>
+            </div>
+
+            <div class="problem">
+                <h3>Systèmes critiques fragilisés</h3>
+                <p>
+                    Risque d’indisponibilité, perte de capacité de réparation,
+                    augmentation du temps d’arrêt ou dépendance à des moyens devenus rares.
+                </p>
+            </div>
+
+            <div class="problem">
+                <h3>MCO sous contrainte</h3>
+                <p>
+                    Difficulté à maintenir des équipements anciens lorsque les pièces,
+                    logiciels, compétences ou documentations ne sont plus disponibles.
+                </p>
+            </div>
+
+            <div class="problem">
+                <h3>Décisions prises dans l’urgence</h3>
+                <p>
+                    Achats tardifs, last time buy mal dimensionné, redesign imposé,
+                    cannibalisation non maîtrisée ou substitution insuffisamment évaluée.
+                </p>
+            </div>
+
+            <div class="problem">
+                <h3>Propagation des risques</h3>
+                <p>
+                    Un changement local peut affecter l’architecture système,
+                    la qualification, la sécurité, la fiabilité, la maintenabilité
+                    ou la disponibilité globale.
+                </p>
+            </div>
+
+            <div class="problem">
+                <h3>Absence de stratégie formalisée</h3>
+                <p>
+                    Processus dispersés, responsabilités floues, manque d’indicateurs,
+                    faible capitalisation et difficulté à arbitrer entre plusieurs options.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Ce que je peux apporter à une organisation industrielle</h2>
+
+        <div class="grid-3">
+            <div class="box">
+                <h3>1. Former</h3>
+                <p>
+                    Développer une culture commune de l’obsolescence auprès des équipes
+                    techniques, maintenance, MCO, achats, qualité, supply chain, RSE,
+                    innovation ou direction industrielle.
+                </p>
+                <a href="formation2.html" class="btn">
+                    Voir l’offre formation
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>2. Diagnostiquer</h3>
+                <p>
+                    Évaluer une situation industrielle, identifier les vulnérabilités,
+                    repérer les dépendances critiques et prioriser les risques à traiter.
+                </p>
+                <a href="services2.html" class="btn">
+                    Demander un diagnostic
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>3. Structurer</h3>
+                <p>
+                    Construire une feuille de route, définir les rôles, formaliser
+                    les processus, choisir les indicateurs et organiser le pilotage.
+                </p>
+                <a href="services2.html" class="btn">
+                    Construire une démarche
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>4. Aider à décider</h3>
+                <p>
+                    Comparer les options : stock, LTB, réparation, cannibalisation,
+                    substitution, émulation, redesign, rétro-ingénierie ou re-conception.
+                </p>
+                <a href="services2.html" class="btn">
+                    Discuter d’un cas
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>5. Accompagner</h3>
+                <p>
+                    Travailler avec vos équipes sur un cas réel, un système critique,
+                    un programme industriel ou une démarche progressive de transformation.
+                </p>
+                <a href="services2.html" class="btn">
+                    Voir l’accompagnement
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>6. Monter un partenariat</h3>
+                <p>
+                    Construire un contrat industriel, un stage, une thèse CIFRE,
+                    un LabCom, un projet collaboratif ou une action de recherche appliquée.
+                </p>
+                <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Demande%20de%20partenariat%20industriel%20obsolescence" class="btn">
+                    Proposer un partenariat
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Une approche adaptée aux préoccupations des industriels</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Réduction des coûts</h3>
+                <p>
+                    Réduire les coûts cachés liés aux achats d’urgence, aux redesigns non planifiés,
+                    aux stocks mal dimensionnés, aux arrêts de production et aux pertes de disponibilité.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Maîtrise des risques</h3>
+                <p>
+                    Identifier les risques avant qu’ils ne deviennent critiques :
+                    rupture fournisseur, fin de vie composant, perte de compétence,
+                    logiciel non maintenu ou moyen de test indisponible.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Disponibilité et MCO</h3>
+                <p>
+                    Relier obsolescence, fiabilité, maintenabilité, réparabilité,
+                    disponibilité opérationnelle, stock de pièces et stratégie de maintenance.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Durabilité et cycle de vie</h3>
+                <p>
+                    Allonger la durée de vie utile des équipements, éviter les remplacements
+                    prématurés et intégrer l’obsolescence dans une logique de pérennité industrielle.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Conformité et traçabilité</h3>
+                <p>
+                    Mieux documenter les décisions, structurer les processus,
+                    clarifier les responsabilités et renforcer la capacité de justification.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Innovation et re-conception</h3>
+                <p>
+                    Transformer l’obsolescence en opportunité de re-conception,
+                    de déspecialisation, de rétro-ingénierie ou d’amélioration de résilience.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Secteurs et contextes concernés</h2>
+
+        <p class="section-intro">
+            Les problématiques d’obsolescence concernent particulièrement les organisations
+            qui exploitent des systèmes complexes, critiques ou à longue durée de vie.
+        </p>
+
+        <div class="grid-3">
+            <div class="box">
+                <h3>Transport et mobilité</h3>
+                <ul>
+                    <li>Ferroviaire</li>
+                    <li>Aéronautique</li>
+                    <li>Automobile</li>
+                    <li>Systèmes embarqués</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Industries critiques</h3>
+                <ul>
+                    <li>Défense</li>
+                    <li>Énergie</li>
+                    <li>Infrastructures</li>
+                    <li>Équipements industriels lourds</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Systèmes technologiques</h3>
+                <ul>
+                    <li>Électronique</li>
+                    <li>Logiciels industriels</li>
+                    <li>Télécommunications</li>
+                    <li>Moyens de test et de maintenance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Modalités de collaboration possibles</h2>
+
+        <div class="process">
+            <div class="process-step">
+                <strong>Formation courte ou intra-entreprise</strong>
+                <p>
+                    Former les équipes à comprendre l’obsolescence, exploiter les PCN/PDN,
+                    choisir les solutions et structurer une démarche de gestion proactive.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>Diagnostic ou audit de maturité</strong>
+                <p>
+                    Évaluer la situation actuelle, identifier les fragilités,
+                    cartographier les risques et proposer des premières recommandations.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>Conseil et accompagnement méthodologique</strong>
+                <p>
+                    Aider les équipes à construire une feuille de route,
+                    arbitrer entre plusieurs options et mettre en place un pilotage adapté.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>Contrat industriel ou projet avec ISAE-Supméca</strong>
+                <p>
+                    Structurer une action plus ambitieuse avec l’école :
+                    contrat direct, stage, projet étudiant, démonstrateur ou étude appliquée.
+                </p>
+            </div>
+
+            <div class="process-step">
+                <strong>CIFRE, LabCom ou projet collaboratif</strong>
+                <p>
+                    Construire une collaboration de recherche plus longue, associant
+                    problématique industrielle, production scientifique et développement méthodologique.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Références et ancrage industriel</h2>
+
+        <div class="proof">
+            <p>
+                Mon activité industrielle repose sur une articulation continue entre recherche,
+                formation, transfert et partenariats. Elle s’appuie sur des collaborations
+                avec des entreprises et organisations confrontées à des enjeux de systèmes critiques,
+                de cycle de vie long, de MCO, d’obsolescence et de transformation industrielle.
+            </p>
+        </div>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Projets structurants</h3>
+                <ul>
+                    <li>ANR EOS : aide à la décision pour la gestion active de l’obsolescence.</li>
+                    <li>LabCom i-OREO avec ABMI : obsolescence et résilience optimisée.</li>
+                    <li>France Relance OREO avec ABMI : résilience face à l’obsolescence.</li>
+                    <li>Travaux sur plateformes et outils d’aide à la décision.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Collaborations et terrains industriels</h3>
+                <ul>
+                    <li>ABMI</li>
+                    <li>SNCF Réseau</li>
+                    <li>Orange</li>
+                    <li>Valeo</li>
+                    <li>Merem Electronique</li>
+                    <li>Everllence</li>
+                    <li>AMSYS</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Thèses et recherche partenariale</h3>
+                <ul>
+                    <li>Thèses CIFRE en contexte industriel.</li>
+                    <li>Encadrement doctoral lié à l’obsolescence, au MCO et à l’Industrie 4.0.</li>
+                    <li>Postdoctorats et ingénierie de recherche en partenariat industriel.</li>
+                    <li>Montage de projets collaboratifs avec entreprises.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Réseaux professionnels</h3>
+                <ul>
+                    <li>International Institute of Obsolescence Management.</li>
+                    <li>Institut Francophone de l’Obsolescence.</li>
+                    <li>Obso-Days.</li>
+                    <li>Travaux de normalisation IEC 62402.</li>
+                    <li>Réseaux Industrie du Futur et transformation industrielle.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Exemples de questions que nous pouvons traiter ensemble</h2>
+
+        <div class="grid-2">
+            <div class="box">
+                <h3>Questions techniques</h3>
+                <ul>
+                    <li>Quels composants ou sous-systèmes sont les plus exposés à l’obsolescence ?</li>
+                    <li>Comment évaluer l’impact d’une fin de vie fournisseur ?</li>
+                    <li>Quand choisir le stock, la réparation, la substitution ou le redesign ?</li>
+                    <li>Comment intégrer l’obsolescence dans les choix de re-conception ?</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>Questions organisationnelles</h3>
+                <ul>
+                    <li>Comment structurer un processus de gestion d’obsolescence ?</li>
+                    <li>Quels rôles donner à la maintenance, aux achats, à la qualité et au bureau d’études ?</li>
+                    <li>Quels indicateurs suivre ?</li>
+                    <li>Comment passer d’une gestion réactive à une démarche proactive ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>Vous avez un problème industriel lié à l’obsolescence ?</h2>
+
+        <p>
+            Formation, diagnostic, accompagnement, contrat industriel, stage,
+            CIFRE, LabCom ou projet collaboratif : décrivez votre besoin
+            et nous identifierons le cadre le plus adapté.
+        </p>
+
+        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Demande%20industrielle%20-%20Obsolescence%20MCO%20conseil%20formation" class="btn btn-dark">
+            Me contacter
+        </a>
+
+        <a href="formation2.html" class="btn">
+            Voir la formation professionnelle
+        </a>
+
+        <a href="services2.html" class="btn">
+            Voir conseil et accompagnement
+        </a>
+
+        <p class="note">
+            Si le bouton ne s’ouvre pas automatiquement, vous pouvez écrire directement à :
+            <a href="mailto:Marc.Zolghadri@isae-supmeca.fr">Marc.Zolghadri@isae-supmeca.fr</a>
+        </p>
+    </div>
+
+    <div class="navigation">
+        <a href="orientation2.html" class="btn btn-secondary">
+            Retour au portail
+        </a>
+
+        <a href="formation2.html" class="btn btn-secondary">
+            Formation professionnelle
+        </a>
+
+        <a href="services2.html" class="btn btn-secondary">
+            Conseil & accompagnement
+        </a>
+
+        <a href="scientific2.html" class="btn btn-secondary">
+            Profil scientifique
+        </a>
+
+        <a href="index.html" class="btn btn-secondary">
+            Page personnelle
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>
+            ISAE-Supméca · Quartz · IIOM · IFO · Obsolescence · MCO · Résilience · Re-conception · Industrie
+        </p>
+    </div>
+
+</div>
+```
+
+</body>
+</html>
