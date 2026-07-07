@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Zolghadri - Orientation</title>
+
+```
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        max-width: 1180px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f4f7f6;
+        color: #2c3e50;
+    }
+
+    .card {
+        background: white;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .portrait {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #2c3e50;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        color: #333333;
+        margin-bottom: 20px;
+        font-size: 1.05em;
+    }
+
+    .intro {
+        max-width: 850px;
+        margin: 0 auto 25px auto;
+        font-size: 1.08em;
+    }
+
+    .hero-message {
+        background: #eef6fb;
+        border-left: 5px solid #3498db;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 30px auto;
+        max-width: 920px;
+        text-align: left;
+    }
+
+    .hero-message strong {
+        color: #2c3e50;
+    }
+
+    .section {
+        margin-top: 36px;
+        border-top: 1px solid #eee;
+        padding-top: 28px;
+    }
+
+    .section-intro {
+        max-width: 850px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        color: #444;
+    }
+
+    .choices {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .needs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 25px;
+    }
+
+    .choice,
+    .need,
+    .box {
+        background: #f8f9fa;
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .choice h3,
+    .need h3,
+    .box h3 {
+        margin-top: 0;
+    }
+
+    .choice p,
+    .need p,
+    .box p {
+        text-align: left;
+    }
+
+    .industrial-focus {
+        background: #f8f9fa;
+        border-left: 5px solid #2c3e50;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 20px;
+    }
+
+    .industrial-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        padding: 12px 18px;
+        margin: 8px 8px 8px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .choice .btn,
+    .need .btn {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .btn:hover {
+        background: #2980b9;
+    }
+
+    .btn-secondary {
+        background: #7f8c8d;
+    }
+
+    .btn-secondary:hover {
+        background: #626e70;
+    }
+
+    .btn-dark {
+        background: #2c3e50;
+    }
+
+    .btn-dark:hover {
+        background: #1f2d3a;
+    }
+
+    .report-section {
+        margin-top: 35px;
+        padding: 25px;
+        background: #eef6fb;
+        border-radius: 12px;
+        border-left: 5px solid #3498db;
+        text-align: center;
+    }
+
+    .report-section p {
+        max-width: 800px;
+        margin: 0 auto 20px auto;
+    }
+
+    .contact-section {
+        margin-top: 35px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        border: 1px solid #e6e6e6;
+        text-align: center;
+    }
+
+    .note {
+        font-size: 0.92em;
+        color: #555;
+        margin-top: 10px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        font-size: 0.9em;
+        color: #555;
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    @media (max-width: 1050px) {
+        .choices,
+        .needs,
+        .industrial-grid {
+            grid-template-columns: 1fr;
+        }
+
+        body {
+            margin: 20px auto;
+        }
+
+        .card {
+            padding: 25px;
+        }
+
+        .choice p,
+        .need p,
+        .box p {
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+        }
+
+        .hero-message {
+            text-align: center;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+    <div class="card">
+
+```
+    <div class="header">
+        <h1>Marc Zolghadri</h1>
+
+        <img src="MarcZolghadri2022.jpeg"
+             alt="Marc Zolghadri"
+             class="portrait">
+
+        <p class="subtitle">
+            Professeur des Universités | ISAE-Supméca | Laboratoire Quartz
+        </p>
+
+        <p class="intro">
+            J’accompagne les acteurs académiques et industriels sur les enjeux
+            de gestion proactive de l’obsolescence, de pérennisation des systèmes complexes,
+            de MCO, de re-conception, de résilience, de formation professionnelle
+            et de structuration de partenariats recherche-industrie.
+        </p>
+
+        <a href="industrial2.html" class="btn">
+            Je suis un industriel
+        </a>
+
+        <a href="formation2.html" class="btn">
+            Je cherche une formation
+        </a>
+
+        <a href="services2.html" class="btn">
+            Je souhaite un conseil ou un accompagnement
+        </a>
+
+        <a href="scientific2.html" class="btn btn-secondary">
+            Je cherche un profil scientifique
+        </a>
+    </div>
+
+    <div class="hero-message">
+        <h2>Une expertise à plusieurs lectures</h2>
+
+        <p>
+            Ce site peut être lu selon votre besoin : collaboration scientifique,
+            partenariat industriel, formation professionnelle, conseil stratégique,
+            accompagnement méthodologique ou montage de projet collaboratif.
+        </p>
+
+        <p>
+            Pour les industriels, l’objectif est simple :
+            <strong>passer d’une obsolescence subie à une démarche structurée,
+            anticipée et pilotable</strong>, en lien avec les enjeux de coûts,
+            de disponibilité, de maintenance, de durabilité et de maîtrise des risques.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Choisir votre entrée principale</h2>
+
+        <p class="section-intro">
+            Sélectionnez le parcours qui correspond le mieux à votre profil ou à votre besoin immédiat.
+        </p>
+
+        <div class="choices">
+
+            <div class="choice">
+                <h3>Profil scientifique</h3>
+
+                <p>
+                    Pour les collaborations académiques, projets de recherche, thèses,
+                    HDR, publications, conférences, expertises scientifiques et réseaux
+                    internationaux.
+                </p>
+
+                <a href="scientific2.html" class="btn">
+                    Accéder au profil scientifique
+                </a>
+            </div>
+
+            <div class="choice">
+                <h3>Profil industriel</h3>
+
+                <p>
+                    Pour comprendre les problèmes industriels que je peux traiter :
+                    obsolescence, MCO, disponibilité, risques, re-conception,
+                    systèmes critiques et partenariats.
+                </p>
+
+                <a href="industrial2.html" class="btn">
+                    Accéder au profil industriel
+                </a>
+            </div>
+
+            <div class="choice">
+                <h3>Formation professionnelle</h3>
+
+                <p>
+                    Pour former des équipes industrielles à la gestion de l’obsolescence,
+                    aux PCN/PDN, aux stratégies de mitigation, au MCO et à la pérennité
+                    des équipements.
+                </p>
+
+                <a href="formation2.html" class="btn">
+                    Voir les formations
+                </a>
+            </div>
+
+            <div class="choice">
+                <h3>Conseil & accompagnement</h3>
+
+                <p>
+                    Pour un besoin concret : diagnostic, audit de maturité, feuille de route,
+                    choix de solutions, mission de conseil, accompagnement ou contrat industriel.
+                </p>
+
+                <a href="services2.html" class="btn">
+                    Voir les services proposés
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Vous êtes industriel ? Ce que je peux faire concrètement</h2>
+
+        <div class="industrial-focus">
+            <p>
+                Les organisations industrielles sont souvent confrontées à l’obsolescence
+                lorsqu’un composant, un fournisseur, un logiciel, une compétence ou un moyen
+                de test devient indisponible. Mon rôle est d’aider à comprendre le problème,
+                structurer les options et construire une réponse adaptée.
+            </p>
+
+            <div class="industrial-grid">
+                <div class="box">
+                    <h3>Former vos équipes</h3>
+                    <p>
+                        Formation courte, sensibilisation de décideurs, formation intra-entreprise,
+                        ateliers appliqués sur vos cas industriels.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Diagnostiquer vos risques</h3>
+                    <p>
+                        Analyse de maturité, cartographie des vulnérabilités, identification
+                        des composants, technologies, fournisseurs ou compétences critiques.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Structurer une feuille de route</h3>
+                    <p>
+                        Définition d’une stratégie obsolescence, processus de surveillance,
+                        indicateurs, gouvernance et priorisation des actions.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h3>Accompagner vos décisions</h3>
+                    <p>
+                        Aide au choix entre stock, réparation, cannibalisation, substitution,
+                        redesign, re-conception, rétro-ingénierie ou partenariat de recherche.
+                    </p>
+                </div>
+            </div>
+
+            <a href="services2.html" class="btn btn-dark">
+                Discuter d’un besoin industriel
+            </a>
+
+            <a href="formation2.html" class="btn">
+                Former mes équipes
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Entrer par votre besoin</h2>
+
+        <p class="section-intro">
+            Vous pouvez aussi accéder au site par le type d’action que vous souhaitez engager.
+        </p>
+
+        <div class="needs">
+
+            <div class="need">
+                <h3>Former</h3>
+                <p>
+                    Développer une culture commune de l’obsolescence auprès des équipes
+                    maintenance, MCO, qualité, achats, supply chain, RSE ou direction technique.
+                </p>
+
+                <a href="formation2.html" class="btn">
+                    Voir l’offre formation
+                </a>
+            </div>
+
+            <div class="need">
+                <h3>Diagnostiquer</h3>
+                <p>
+                    Identifier les risques d’obsolescence, les dépendances critiques,
+                    les fragilités fournisseurs et les impacts possibles sur la disponibilité.
+                </p>
+
+                <a href="industrial2.html" class="btn">
+                    Voir les problèmes traités
+                </a>
+            </div>
+
+            <div class="need">
+                <h3>Conseiller</h3>
+                <p>
+                    Clarifier les options, comparer les scénarios, structurer les décisions
+                    et choisir une stratégie adaptée au contexte industriel.
+                </p>
+
+                <a href="services2.html" class="btn">
+                    Voir les modalités de conseil
+                </a>
+            </div>
+
+            <div class="need">
+                <h3>Accompagner</h3>
+                <p>
+                    Travailler avec vos équipes sur un cas réel, un système critique,
+                    une feuille de route ou une démarche de transformation.
+                </p>
+
+                <a href="services2.html" class="btn">
+                    Voir l’accompagnement
+                </a>
+            </div>
+
+            <div class="need">
+                <h3>Monter un partenariat</h3>
+                <p>
+                    Construire une CIFRE, un LabCom, un contrat industriel direct,
+                    un projet collaboratif, un stage ou une action de recherche appliquée.
+                </p>
+
+                <a href="industrial2.html" class="btn">
+                    Voir les partenariats industriels
+                </a>
+            </div>
+
+            <div class="need">
+                <h3>Évaluer le profil scientifique</h3>
+                <p>
+                    Consulter les publications, projets, encadrements doctoraux,
+                    responsabilités scientifiques et contributions au domaine.
+                </p>
+
+                <a href="scientific2.html" class="btn">
+                    Voir le profil académique
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Cadres d’intervention possibles</h2>
+
+        <div class="industrial-grid">
+            <div class="box">
+                <h3>Formation via ISAE-Supméca et AMSYS</h3>
+                <p>
+                    Les formations professionnelles sont réalisées dans un cadre institutionnel,
+                    avec ISAE-Supméca et son partenaire AMSYS, en inter ou intra-entreprise.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Conseil personnel</h3>
+                <p>
+                    Certaines missions de conseil ou d’accompagnement peuvent être étudiées
+                    dans un cadre personnel, en tant qu’autoentrepreneur, lorsque ce cadre
+                    est adapté et autorisé.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Contrats industriels avec ISAE-Supméca</h3>
+                <p>
+                    Les demandes plus structurantes peuvent être adossées à ISAE-Supméca :
+                    contrats industriels directs, projets collaboratifs, stages ou actions
+                    de recherche appliquée.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Projets de recherche partenariale</h3>
+                <p>
+                    Les collaborations peuvent prendre la forme de thèses CIFRE, LabCom,
+                    projets ANR, projets européens, démonstrateurs ou plateformes d’aide
+                    à la décision.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="report-section">
+        <h2>CV détaillé et rapport d’activités</h2>
+
+        <p>
+            Vous pouvez consulter mon parcours complet, mes responsabilités scientifiques,
+            pédagogiques et institutionnelles, ainsi que mes activités de recherche,
+            de formation, de rayonnement et de transfert vers l’industrie.
+        </p>
+
+        <a href="RA-MarcZolghadri.pdf" target="_blank" class="btn">
+            Télécharger le rapport d’activités complet
+        </a>
+    </div>
+
+    <div class="contact-section">
+        <h2>Vous ne savez pas quelle page consulter ?</h2>
+
+        <p>
+            Décrivez simplement votre besoin : formation, diagnostic, conseil,
+            accompagnement, projet industriel, CIFRE, LabCom ou collaboration scientifique.
+        </p>
+
+        <a href="mailto:Marc.Zolghadri@isae-supmeca.fr?subject=Demande%20de%20contact%20-%20Obsolescence%20formation%20conseil%20partenariat" class="btn">
+            Me contacter
+        </a>
+
+        <p class="note">
+            Si le bouton ne s’ouvre pas automatiquement, vous pouvez écrire directement à :
+            <a href="mailto:Marc.Zolghadri@isae-supmeca.fr">Marc.Zolghadri@isae-supmeca.fr</a>
+        </p>
+    </div>
+
+    <div class="footer">
+        <a href="index.html" class="btn btn-secondary">
+            Retour à la page personnelle
+        </a>
+
+        <p>
+            ISAE-Supméca · Quartz · IIOM · IFO · Gestion de l’obsolescence · Formation · Conseil · Recherche
+        </p>
+    </div>
+
+</div>
+```
+
+</body>
+</html>
